@@ -22,7 +22,7 @@ function Welcome() {
         </p>
         <Button>
           <Link className='trade-button' to='/trade/'>
-            Trade
+            Start Trading
           </Link>
         </Button>
       </Container>
