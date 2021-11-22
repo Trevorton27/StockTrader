@@ -18,7 +18,7 @@ function Welcome() {
           stock(s) you'd like to purchase. You will be given a digital wallet
           with a balance of $100,000USD. So you'll have plenty of room to play
           around. Pretty nice, eh? So go ahead and click on the "Trade" link
-          above and get started. Or you can click this button, too.
+          above and get started. Or you can click the button below, too.
         </p>
         <Button>
           <Link className='trade-button' to='/trade/'>
