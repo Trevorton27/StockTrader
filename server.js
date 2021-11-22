@@ -1,21 +1,49 @@
 const express = require('express');
 const path = require('path');
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 3000;
 const app = express();
+require('dotenv').config();
+const bodyParser = require('body-parser');
+const pool = require('./database/pool');
+const usersRouter = require('./routes/user-routes');
+const stocksRouter = require('./routes/stocks-routes');
 
-// Handle GET requests to /api route
-// Have Node serve the files for our built React app
-app.use(express.static(path.resolve(__dirname, '../client/build')));
+app.use(express.json());
+app.use(usersRouter);
+app.use(stocksRouter);
 
-// Handle GET requests to /api route
-app.get('/api', (req, res) => {
-  res.json({ message: 'Hello from server!' });
+app.use(bodyParser.json());
+
+app.use('/', express.static(path.join(__dirname, 'client/build')));
+app.use('/trade', express.static(path.join(__dirname, 'client/build')));
+app.use('/portfolio', express.static(path.join(__dirname, 'client/build')));
+
+app.get('/*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
 });
 
-// All other GET requests not handled before will return our React app
-app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, '../client/build', 'index.html'));
-});
+//for local DB
+
+// pool
+//   .connect({
+//     host: 'localhost',
+//     port: 5432,
+//     database: 'stock_trader',
+//     user: process.env.DB_USER,
+//     password: process.env.DB_PASSWORD
+//   })
+//   .then(() => {
+//     app.listen(port, () => {
+//       console.log(`Listening on port: ${port}.`);
+//     });
+//   })
+//   .catch((err) => {
+//     console.error(err);
+//   });
+
+//for deployed/production DB
+
+pool.connect();
 
 app.listen(port, () => {
   console.log(`listening on port ${port}`);

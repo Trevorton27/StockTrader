@@ -2,6 +2,28 @@
   text-align: center;
 }
 
+.search-result-image {
+  height: 460px;
+  width: 400px;
+}
+
+.welcome-container {
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.welcome-container p {
+  font-size: 1.5rem;
+}
+
+.form-container {
+  width: 400px !important;
+}
+
+.form-paragraph {
+  display: inline-block;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -26,6 +48,9 @@
 
 .App-link {
   color: #61dafb;
+}
+.trade-button {
+  color: #fff;
 }
 
 @keyframes App-logo-spin {

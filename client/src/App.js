@@ -1,13 +1,43 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import React, { useContext } from 'react';
+import { Route, BrowserRouter as Router, Redirect, Switch } from 'react-router-dom';
+import AuthContext from './store/auth-context';
 import './App.css';
+import Header from './Components/Header';
+import Home from './Pages/Home';
+import Welcome from './Pages/Welcome';
+import Trade from './Pages/Trade';
+import Portfolio from './Pages/Portfolio'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-const App = () => {
+function App() {
+  const authCtx = useContext(AuthContext);
+  const isLoggedIn = authCtx.isLoggedIn;
+
   return (
-    <div className='App'>
-      <p>HI. I'm a react app that works.</p>
-    </div>
+    <Router>
+        <Header />
+
+      <Switch>
+          {!isLoggedIn && (
+            <Route exact path="/"  component={Home} />
+          )}
+          {isLoggedIn && (
+            <Route exact path="/"  component={Welcome} />
+          )}
+          {isLoggedIn && (
+            <Route path="/trade" component={Trade} />
+          )}
+          {isLoggedIn && (
+            <Route path="/portfolio" component={Portfolio} />
+          )}
+          <Route path="*">
+            <Redirect to="/" />
+          </Route>
+          {/* <Route path="*" component={Home} /> */}
+          {/* <Route render={() => <Redirect to={{path: "/"}} />} /> */}
+      </Switch>
+    </Router>
   );
-};
+}
 
 export default App;
