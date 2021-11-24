@@ -12,6 +12,10 @@
   margin-top: 20px;
 }
 
+.trade-button {
+  font-size: 18px;
+}
+
 .welcome-container p {
   font-size: 1.5rem;
 }
