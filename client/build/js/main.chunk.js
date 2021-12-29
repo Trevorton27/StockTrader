@@ -15,7 +15,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, ".App {\r\n  text-align: center;\r\n}\r\n\r\n.search-result-image {\r\n  height: 460px;\r\n  width: 400px;\r\n}\r\n\r\n.welcome-container {\r\n  border-radius: 20px;\r\n  margin-top: 20px;\r\n}\r\n\r\n.welcome-container p {\r\n  font-size: 1.5rem;\r\n}\r\n\r\n.form-container {\r\n  width: 400px !important;\r\n}\r\n\r\n.form-paragraph {\r\n  display: inline-block;\r\n}\r\n\r\n.App-logo {\r\n  height: 40vmin;\r\n  pointer-events: none;\r\n}\r\n\r\n@media (prefers-reduced-motion: no-preference) {\r\n  .App-logo {\r\n    animation: App-logo-spin infinite 20s linear;\r\n  }\r\n}\r\n\r\n.App-header {\r\n  background-color: #282c34;\r\n  min-height: 100vh;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: center;\r\n  font-size: calc(10px + 2vmin);\r\n  color: white;\r\n}\r\n\r\n.App-link {\r\n  color: #61dafb;\r\n}\r\n.trade-button {\r\n  color: #fff;\r\n}\r\n\r\n@keyframes App-logo-spin {\r\n  from {\r\n    transform: rotate(0deg);\r\n  }\r\n  to {\r\n    transform: rotate(360deg);\r\n  }\r\n}\r\n", "",{"version":3,"sources":["webpack://src/App.css"],"names":[],"mappings":"AAAA;EACE,kBAAkB;AACpB;;AAEA;EACE,aAAa;EACb,YAAY;AACd;;AAEA;EACE,mBAAmB;EACnB,gBAAgB;AAClB;;AAEA;EACE,iBAAiB;AACnB;;AAEA;EACE,uBAAuB;AACzB;;AAEA;EACE,qBAAqB;AACvB;;AAEA;EACE,cAAc;EACd,oBAAoB;AACtB;;AAEA;EACE;IACE,4CAA4C;EAC9C;AACF;;AAEA;EACE,yBAAyB;EACzB,iBAAiB;EACjB,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,uBAAuB;EACvB,6BAA6B;EAC7B,YAAY;AACd;;AAEA;EACE,cAAc;AAChB;AACA;EACE,WAAW;AACb;;AAEA;EACE;IACE,uBAAuB;EACzB;EACA;IACE,yBAAyB;EAC3B;AACF","sourcesContent":[".App {\r\n  text-align: center;\r\n}\r\n\r\n.search-result-image {\r\n  height: 460px;\r\n  width: 400px;\r\n}\r\n\r\n.welcome-container {\r\n  border-radius: 20px;\r\n  margin-top: 20px;\r\n}\r\n\r\n.welcome-container p {\r\n  font-size: 1.5rem;\r\n}\r\n\r\n.form-container {\r\n  width: 400px !important;\r\n}\r\n\r\n.form-paragraph {\r\n  display: inline-block;\r\n}\r\n\r\n.App-logo {\r\n  height: 40vmin;\r\n  pointer-events: none;\r\n}\r\n\r\n@media (prefers-reduced-motion: no-preference) {\r\n  .App-logo {\r\n    animation: App-logo-spin infinite 20s linear;\r\n  }\r\n}\r\n\r\n.App-header {\r\n  background-color: #282c34;\r\n  min-height: 100vh;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: center;\r\n  font-size: calc(10px + 2vmin);\r\n  color: white;\r\n}\r\n\r\n.App-link {\r\n  color: #61dafb;\r\n}\r\n.trade-button {\r\n  color: #fff;\r\n}\r\n\r\n@keyframes App-logo-spin {\r\n  from {\r\n    transform: rotate(0deg);\r\n  }\r\n  to {\r\n    transform: rotate(360deg);\r\n  }\r\n}\r\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.i, ".App {\r\n  text-align: center;\r\n}\r\n\r\n.search-result-image {\r\n  height: 460px;\r\n  width: 400px;\r\n}\r\n\r\n.welcome-container {\r\n  border-radius: 20px;\r\n  margin-top: 20px;\r\n}\r\n\r\n.trade-button {\r\n  font-size: 18px;\r\n}\r\n\r\n.welcome-container p {\r\n  font-size: 1.5rem;\r\n}\r\n\r\n.form-container {\r\n  width: 400px !important;\r\n}\r\n\r\n.form-paragraph {\r\n  display: inline-block;\r\n}\r\n\r\n.App-logo {\r\n  height: 40vmin;\r\n  pointer-events: none;\r\n}\r\n\r\n@media (prefers-reduced-motion: no-preference) {\r\n  .App-logo {\r\n    animation: App-logo-spin infinite 20s linear;\r\n  }\r\n}\r\n\r\n.App-header {\r\n  background-color: #282c34;\r\n  min-height: 100vh;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: center;\r\n  font-size: calc(10px + 2vmin);\r\n  color: white;\r\n}\r\n\r\n.App-link {\r\n  color: #61dafb;\r\n}\r\n.trade-button {\r\n  color: #fff;\r\n}\r\n\r\n@keyframes App-logo-spin {\r\n  from {\r\n    transform: rotate(0deg);\r\n  }\r\n  to {\r\n    transform: rotate(360deg);\r\n  }\r\n}\r\n", "",{"version":3,"sources":["webpack://src/App.css"],"names":[],"mappings":"AAAA;EACE,kBAAkB;AACpB;;AAEA;EACE,aAAa;EACb,YAAY;AACd;;AAEA;EACE,mBAAmB;EACnB,gBAAgB;AAClB;;AAEA;EACE,eAAe;AACjB;;AAEA;EACE,iBAAiB;AACnB;;AAEA;EACE,uBAAuB;AACzB;;AAEA;EACE,qBAAqB;AACvB;;AAEA;EACE,cAAc;EACd,oBAAoB;AACtB;;AAEA;EACE;IACE,4CAA4C;EAC9C;AACF;;AAEA;EACE,yBAAyB;EACzB,iBAAiB;EACjB,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,uBAAuB;EACvB,6BAA6B;EAC7B,YAAY;AACd;;AAEA;EACE,cAAc;AAChB;AACA;EACE,WAAW;AACb;;AAEA;EACE;IACE,uBAAuB;EACzB;EACA;IACE,yBAAyB;EAC3B;AACF","sourcesContent":[".App {\r\n  text-align: center;\r\n}\r\n\r\n.search-result-image {\r\n  height: 460px;\r\n  width: 400px;\r\n}\r\n\r\n.welcome-container {\r\n  border-radius: 20px;\r\n  margin-top: 20px;\r\n}\r\n\r\n.trade-button {\r\n  font-size: 18px;\r\n}\r\n\r\n.welcome-container p {\r\n  font-size: 1.5rem;\r\n}\r\n\r\n.form-container {\r\n  width: 400px !important;\r\n}\r\n\r\n.form-paragraph {\r\n  display: inline-block;\r\n}\r\n\r\n.App-logo {\r\n  height: 40vmin;\r\n  pointer-events: none;\r\n}\r\n\r\n@media (prefers-reduced-motion: no-preference) {\r\n  .App-logo {\r\n    animation: App-logo-spin infinite 20s linear;\r\n  }\r\n}\r\n\r\n.App-header {\r\n  background-color: #282c34;\r\n  min-height: 100vh;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: center;\r\n  font-size: calc(10px + 2vmin);\r\n  color: white;\r\n}\r\n\r\n.App-link {\r\n  color: #61dafb;\r\n}\r\n.trade-button {\r\n  color: #fff;\r\n}\r\n\r\n@keyframes App-logo-spin {\r\n  from {\r\n    transform: rotate(0deg);\r\n  }\r\n  to {\r\n    transform: rotate(360deg);\r\n  }\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -141,7 +141,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_9__);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__);
-var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\software-development-mastery-course\\MainStockTrader\\StockTrader\\client\\src\\App.js";
+var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\App.js";
 
 
 
@@ -160,8 +160,8 @@ function App() {
   return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["BrowserRouter"], {
     children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__["jsxDEV"])(_Components_Header__WEBPACK_IMPORTED_MODULE_4__["default"], {}, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 18,
-      columnNumber: 9
+      lineNumber: 24,
+      columnNumber: 7
     }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Switch"], {
       children: [!isLoggedIn && /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
         exact: true,
@@ -169,52 +169,52 @@ function App() {
         component: _Pages_Home__WEBPACK_IMPORTED_MODULE_5__["default"]
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 22,
-        columnNumber: 13
+        lineNumber: 27,
+        columnNumber: 25
       }, this), isLoggedIn && /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
         exact: true,
         path: "/",
         component: _Pages_Welcome__WEBPACK_IMPORTED_MODULE_6__["default"]
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 25,
-        columnNumber: 13
+        lineNumber: 28,
+        columnNumber: 24
       }, this), isLoggedIn && /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
         path: "/trade",
         component: _Pages_Trade__WEBPACK_IMPORTED_MODULE_7__["default"]
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 28,
-        columnNumber: 13
+        lineNumber: 29,
+        columnNumber: 24
       }, this), isLoggedIn && /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
         path: "/portfolio",
         component: _Pages_Portfolio__WEBPACK_IMPORTED_MODULE_8__["default"]
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 31,
-        columnNumber: 13
+        lineNumber: 30,
+        columnNumber: 24
       }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
         path: "*",
         children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Redirect"], {
           to: "/"
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 34,
-          columnNumber: 13
+          lineNumber: 32,
+          columnNumber: 11
         }, this)
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 33,
-        columnNumber: 11
+        lineNumber: 31,
+        columnNumber: 9
       }, this)]
     }, void 0, true, {
       fileName: _jsxFileName,
-      lineNumber: 20,
+      lineNumber: 26,
       columnNumber: 7
     }, this)]
   }, void 0, true, {
     fileName: _jsxFileName,
-    lineNumber: 17,
+    lineNumber: 23,
     columnNumber: 5
   }, this);
 }
@@ -237,7 +237,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_google_charts__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-google-charts */ "../node_modules/react-google-charts/dist/index.esm.js");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\software-development-mastery-course\\MainStockTrader\\StockTrader\\client\\src\\Components\\Charts\\PortfolioBarChart.js";
+var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\Components\\Charts\\PortfolioBarChart.js";
 
 
 
@@ -306,7 +306,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_google_charts__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-google-charts */ "../node_modules/react-google-charts/dist/index.esm.js");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\software-development-mastery-course\\MainStockTrader\\StockTrader\\client\\src\\Components\\Charts\\PortfolioPieChart.js";
+var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\Components\\Charts\\PortfolioPieChart.js";
 
 
 
@@ -369,7 +369,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_google_charts__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-google-charts */ "../node_modules/react-google-charts/dist/index.esm.js");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\software-development-mastery-course\\MainStockTrader\\StockTrader\\client\\src\\Components\\Charts\\SearchResultsChart.js";
+var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\Components\\Charts\\SearchResultsChart.js";
 
 
 
@@ -445,7 +445,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _store_auth_context__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../store/auth-context */ "./src/store/auth-context.js");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__);
-var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\software-development-mastery-course\\MainStockTrader\\StockTrader\\client\\src\\Components\\CurrentHoldingsCard.js";
+var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\Components\\CurrentHoldingsCard.js";
 
 
 
@@ -571,9 +571,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-bootstrap */ "../node_modules/react-bootstrap/esm/index.js");
 /* harmony import */ var _store_auth_context__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../store/auth-context */ "./src/store/auth-context.js");
 /* harmony import */ var _store_user_context__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../store/user-context */ "./src/store/user-context.js");
-/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
-/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__);
-var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\software-development-mastery-course\\MainStockTrader\\StockTrader\\client\\src\\Components\\Header.js";
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__);
+var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\Components\\Header.js";
+
 
 
 
@@ -591,76 +593,74 @@ function Header() {
     userCtx.logout();
   }
 
-  ;
-  return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__["jsxDEV"])(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Navbar"], {
+  return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__["jsxDEV"])(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Navbar"], {
     collapseOnSelect: true,
     expand: "lg",
     bg: "dark",
     variant: "dark",
     sticky: "top",
-    children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__["jsxDEV"])(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Navbar"].Brand, {
+    children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__["jsxDEV"])(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Navbar"].Brand, {
       href: "#home"
     }, void 0, false, {
       fileName: _jsxFileName,
       lineNumber: 20,
-      columnNumber: 13
-    }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__["jsxDEV"])(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Navbar"].Toggle, {
+      columnNumber: 7
+    }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__["jsxDEV"])(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Navbar"].Toggle, {
       "aria-controls": "responsive-navbar-nav"
     }, void 0, false, {
       fileName: _jsxFileName,
       lineNumber: 21,
-      columnNumber: 13
-    }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__["jsxDEV"])(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Navbar"].Collapse, {
+      columnNumber: 7
+    }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__["jsxDEV"])(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Navbar"].Collapse, {
       id: "responsive-navbar-nav",
-      children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__["jsxDEV"])(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Nav"], {
-        children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__["jsxDEV"])(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Nav"].Link, {
-          href: "/",
+      children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__["jsxDEV"])(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Nav"], {
+        children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Link"], {
+          to: "/",
           children: "Home"
         }, void 0, false, {
           fileName: _jsxFileName,
           lineNumber: 24,
-          columnNumber: 21
-        }, this), isLoggedIn && /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__["jsxDEV"])(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Nav"].Link, {
-          href: "/trade",
+          columnNumber: 11
+        }, this), isLoggedIn && /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Link"], {
+          to: "/trade",
           children: "Trade"
         }, void 0, false, {
           fileName: _jsxFileName,
           lineNumber: 25,
-          columnNumber: 37
-        }, this), isLoggedIn && /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__["jsxDEV"])(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Nav"].Link, {
-          href: "/portfolio",
+          columnNumber: 26
+        }, this), isLoggedIn && /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Link"], {
+          to: "/portfolio",
           children: "Portfolio"
         }, void 0, false, {
           fileName: _jsxFileName,
           lineNumber: 26,
-          columnNumber: 37
-        }, this), isLoggedIn && /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__["jsxDEV"])(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Button"], {
+          columnNumber: 26
+        }, this), isLoggedIn && /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_5__["jsxDEV"])(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Button"], {
           variant: "dark",
           onClick: logoutHandler,
           children: "Logout"
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 27,
-          columnNumber: 37
+          lineNumber: 28,
+          columnNumber: 13
         }, this)]
       }, void 0, true, {
         fileName: _jsxFileName,
         lineNumber: 23,
-        columnNumber: 17
+        columnNumber: 9
       }, this)
     }, void 0, false, {
       fileName: _jsxFileName,
       lineNumber: 22,
-      columnNumber: 13
+      columnNumber: 7
     }, this)]
   }, void 0, true, {
     fileName: _jsxFileName,
     lineNumber: 19,
-    columnNumber: 9
+    columnNumber: 5
   }, this);
 }
 
-;
 /* harmony default export */ __webpack_exports__["default"] = (Header);
 
 /***/ }),
@@ -680,7 +680,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__);
-var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\software-development-mastery-course\\MainStockTrader\\StockTrader\\client\\src\\Components\\LogInForm.js";
+var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\Components\\LogInForm.js";
 
 
 
@@ -775,7 +775,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-bootstrap */ "../node_modules/react-bootstrap/esm/index.js");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\software-development-mastery-course\\MainStockTrader\\StockTrader\\client\\src\\Components\\SearchForm.js";
+var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\Components\\SearchForm.js";
 
 
 
@@ -848,7 +848,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Styles_SearchResultCard_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_Styles_SearchResultCard_css__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__);
-var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\software-development-mastery-course\\MainStockTrader\\StockTrader\\client\\src\\Components\\SearchResultCard.js";
+var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\Components\\SearchResultCard.js";
 
 
 
@@ -1017,7 +1017,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_3__);
-var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\software-development-mastery-course\\MainStockTrader\\StockTrader\\client\\src\\Components\\SignUpForm.js";
+var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\Components\\SignUpForm.js";
 
 
 
@@ -1114,7 +1114,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__);
-var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\software-development-mastery-course\\MainStockTrader\\StockTrader\\client\\src\\Components\\TransactionModal.js";
+var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\Components\\TransactionModal.js";
 
 
 
@@ -1384,7 +1384,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _store_user_context__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../store/user-context */ "./src/store/user-context.js");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__);
-var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\software-development-mastery-course\\MainStockTrader\\StockTrader\\client\\src\\Pages\\Home.js";
+var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\Pages\\Home.js";
 
 
 
@@ -1534,7 +1534,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Components_Charts_PortfolioBarChart__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../Components/Charts/PortfolioBarChart */ "./src/Components/Charts/PortfolioBarChart.js");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__);
-var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\software-development-mastery-course\\MainStockTrader\\StockTrader\\client\\src\\Pages\\Portfolio.js";
+var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\Pages\\Portfolio.js";
 
 
 
@@ -1753,7 +1753,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Components_Charts_SearchResultsChart__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../Components/Charts/SearchResultsChart */ "./src/Components/Charts/SearchResultsChart.js");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_10__);
-var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\software-development-mastery-course\\MainStockTrader\\StockTrader\\client\\src\\Pages\\Trade.js";
+var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\Pages\\Trade.js";
 
 
 
@@ -2007,7 +2007,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__);
-var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\software-development-mastery-course\\MainStockTrader\\StockTrader\\client\\src\\Pages\\Welcome.js";
+var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\Pages\\Welcome.js";
 
 
 
@@ -2027,7 +2027,7 @@ function Welcome() {
         lineNumber: 13,
         columnNumber: 9
       }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__["jsxDEV"])("p", {
-        children: [' ', "Now that you have registered and logged in, you can begin trading. The first step is head to the \"Trade\" page. There you can search for a stock(s) you'd like to purchase. You will be given a digital wallet with a balance of $100,000USD. So you'll have plenty of room to play around. Pretty nice, eh? So go ahead and click on the \"Trade\" link above and get started. Or you can click this button, too."]
+        children: [' ', "Now that you have registered and logged in, you can begin trading. The first step is head to the \"Trade\" page. There you can search for a stock(s) you'd like to purchase. You will be given a digital wallet with a balance of $100,000USD. So you'll have plenty of room to play around. Pretty nice, eh? So go ahead and click on the \"Trade\" link above and get started. Or you can click the button below, too."]
       }, void 0, true, {
         fileName: _jsxFileName,
         lineNumber: 14,
@@ -2036,7 +2036,7 @@ function Welcome() {
         children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_4__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Link"], {
           className: "trade-button",
           to: "/trade/",
-          children: "Trade"
+          children: "Start Trading"
         }, void 0, false, {
           fileName: _jsxFileName,
           lineNumber: 24,
@@ -2171,7 +2171,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _store_user_context__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./store/user-context */ "./src/store/user-context.js");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__);
-var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\software-development-mastery-course\\MainStockTrader\\StockTrader\\client\\src\\index.js";
+var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\index.js";
 
 
 
@@ -2185,23 +2185,23 @@ react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/Object(rea
     children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__["jsxDEV"])(react__WEBPACK_IMPORTED_MODULE_0___default.a.StrictMode, {
       children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__["jsxDEV"])(_App__WEBPACK_IMPORTED_MODULE_3__["default"], {}, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 14,
-        columnNumber: 11
+        lineNumber: 13,
+        columnNumber: 9
       }, undefined)
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 13,
-      columnNumber: 9
+      lineNumber: 12,
+      columnNumber: 7
     }, undefined)
   }, void 0, false, {
     fileName: _jsxFileName,
-    lineNumber: 12,
-    columnNumber: 7
+    lineNumber: 11,
+    columnNumber: 5
   }, undefined)
 }, void 0, false, {
   fileName: _jsxFileName,
-  lineNumber: 11,
-  columnNumber: 5
+  lineNumber: 10,
+  columnNumber: 3
 }, undefined), document.getElementById('root')); // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
@@ -2255,7 +2255,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\software-development-mastery-course\\MainStockTrader\\StockTrader\\client\\src\\store\\auth-context.js";
+var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\store\\auth-context.js";
 
 
 let logoutTimer;
@@ -2362,7 +2362,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
 /* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\software-development-mastery-course\\MainStockTrader\\StockTrader\\client\\src\\store\\user-context.js";
+var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\store\\user-context.js";
 
 
 const UserContext = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createContext({
@@ -2445,8 +2445,8 @@ module.exports = new Intl.NumberFormat('en-US', {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\spira\OneDrive\Documents\software-development-mastery-course\MainStockTrader\StockTrader\client\node_modules\react-dev-utils\webpackHotDevClient.js */"./node_modules/react-dev-utils/webpackHotDevClient.js");
-module.exports = __webpack_require__(/*! C:\Users\spira\OneDrive\Documents\software-development-mastery-course\MainStockTrader\StockTrader\client\src\index.js */"./src/index.js");
+__webpack_require__(/*! C:\Users\spira\OneDrive\Documents\PersonalProjects\StockTrader\StockTrader\client\node_modules\react-dev-utils\webpackHotDevClient.js */"./node_modules/react-dev-utils/webpackHotDevClient.js");
+module.exports = __webpack_require__(/*! C:\Users\spira\OneDrive\Documents\PersonalProjects\StockTrader\StockTrader\client\src\index.js */"./src/index.js");
 
 
 /***/ })

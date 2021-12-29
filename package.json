@@ -1,36 +1,35 @@
 {
-  "name": "stocktrader",
-  "version": "1.0.0",
-  "description": "Stock Trader",
-  "main": "server.js",
-  "engines": {
-    "node": "12.18.3"
-  },
-  "scripts": {
-    "test": "jest",
-    "client": "npm run watch --prefix client",
-    "dev": "concurrently \"nodemon sever.js\" \"npm run client\""
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Trevorton27/StockTrader.git"
-  },
-  "author": "Trevor Mearns",
-  "license": "ISC",
-  "dependencies": {
-    "axios": "^0.21.1",
-    "body-parser": "^1.19.0",
-    "bootstrap": "^4.6.0",
-    "concurrently": "^5.3.0",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "jsonwebtoken": "^8.5.1",
-    "nodemon": "^2.0.7",
-    "pg": "^8.6.0",
-    "react-bootstrap": "^1.4.3",
-    "react-google-charts": "^3.0.15"
-  },
-  "devDependencies": {
-    "jest": "^27.0.6"
+    "name": "stocktrader",
+    "version": "1.0.0",
+    "description": "Stock Trader",
+    "main": "server.js",
+    "engines": {
+      "node": "12.18.3"
+    },
+    "scripts": {
+      "test": "jest",
+      "client": "npm run watch --prefix client",
+      "dev": "concurrently \"nodemon sever.js\" \"npm run client\""
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/Trevorton27/StockTrader.git"
+    },
+    "author": "Trevor Mearns",
+    "license": "ISC",
+    "dependencies": {
+      "axios": "^0.21.1",
+      "bootstrap": "^4.6.0",
+      "concurrently": "^5.3.0",
+      "dotenv": "^8.2.0",
+      "express": "^4.17.1",
+      "jsonwebtoken": "^8.5.1",
+      "nodemon": "^2.0.7",
+      "pg": "^8.6.0",
+      "react-bootstrap": "^1.4.3",
+      "react-google-charts": "^3.0.15"
+    },
+    "devDependencies": {
+      "jest": "^27.0.6"
+    }
   }
-}

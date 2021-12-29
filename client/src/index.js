@@ -7,14 +7,13 @@ import { AuthContextProvider } from './store/auth-context';
 import { UserContextProvider } from './store/user-context';
 
 ReactDOM.render(
-  
-    <AuthContextProvider>
-      <UserContextProvider>
-        <React.StrictMode>
-          <App />
-        </React.StrictMode>
-      </UserContextProvider>
-    </AuthContextProvider>,
+  <AuthContextProvider>
+    <UserContextProvider>
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>
+    </UserContextProvider>
+  </AuthContextProvider>,
   document.getElementById('root')
 );
 
