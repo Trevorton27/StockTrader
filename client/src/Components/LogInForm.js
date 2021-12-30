@@ -1,38 +1,71 @@
-import React from 'react';
-import { Container, Form, Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import React, { useState, useContext } from 'react';
+import axios from 'axios';
+import { Button, Modal, Form } from 'react-bootstrap';
+import { withRouter } from 'react-router-dom';
+import { UserNameContext } from '../context/UserNameContext';
 
-function LogInForm(props) {
+const LoginForm = (props) => {
+  const [show, setShow] = useState(false);
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [userName, setUserName] = useContext(UserNameContext);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  const loginUser = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await axios.get('/api/auth/login', {
+        params: {
+          email: email,
+          password: password
+        }
+      });
+      localStorage.setItem('data', JSON.stringify(response.data));
+      setUserName(response.data.name);
+
+      props.history.push('/');
+    } catch (err) {
+      console.error('error in login user', err.message);
+    }
+  };
+
   return (
-    <Container className='form-container'>
-      <Form onSubmit={props.handleLogin}>
-        <Form.Group controlId='formBasicEmail'>
-          <Form.Control
-            type='text'
-            ref={props.userNameInputRef}
-            placeholder='Enter Username'
-          />
-        </Form.Group>
-
-        <Form.Group controlId='formBasicPassword'>
-          <Form.Control
-            type='password'
-            ref={props.passwordInputRef}
-            placeholder='Password'
-          />
-        </Form.Group>
-        <Button variant='dark' type='submit'>
-          Login
-        </Button>
-        <p className='form-paragraph'>
-          Not registered yet? Register{' '}
-          <Link onClick={props.isRegistered} to='/register'>
-            Here
-          </Link>
-        </p>
-      </Form>
-    </Container>
+    <>
+      <Button size='lg' onClick={handleShow} className='btn btn-primary'>
+        Login
+      </Button>
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Login Form</Modal.Title>
+        </Modal.Header>
+        <Form onSubmit={loginUser}>
+          <Form.Group controlId='formBasicEmail'>
+            <Form.Label>Email address</Form.Label>
+            <Form.Control
+              type='email'
+              placeholder='Enter email'
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+          </Form.Group>
+          <Form.Group controlId='formBasicPassword'>
+            <Form.Label>Password</Form.Label>
+            <Form.Control
+              type='password'
+              placeholder='Password'
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+          </Form.Group>
+          <Button variant='primary' type='submit'>
+            Submit
+          </Button>
+        </Form>
+      </Modal>
+    </>
   );
-}
+};
 
-export default LogInForm;
+export default withRouter(LoginForm);

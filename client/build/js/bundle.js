@@ -208,7 +208,7 @@
 /******/ 	// on error function for async loading
 /******/ 	__webpack_require__.oe = function(err) { console.error(err); throw err; };
 /******/
-/******/ 	var jsonpArray = this["webpackJsonpclient"] = this["webpackJsonpclient"] || [];
+/******/ 	var jsonpArray = this["webpackJsonpstock-trading-app"] = this["webpackJsonpstock-trading-app"] || [];
 /******/ 	var oldJsonpFunction = jsonpArray.push.bind(jsonpArray);
 /******/ 	jsonpArray.push = webpackJsonpCallback;
 /******/ 	jsonpArray = jsonpArray.slice();

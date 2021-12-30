@@ -1,39 +1,18 @@
-import React, { useContext } from 'react';
-import {
-  Route,
-  BrowserRouter as Router,
-  Redirect,
-  Switch,
-  Link
-} from 'react-router-dom';
-import AuthContext from './store/auth-context';
-import './App.css';
-import Header from './Components/Header';
+import React from 'react';
 import Home from './Pages/Home';
-import Welcome from './Pages/Welcome';
-import Trade from './Pages/Trade';
-import Portfolio from './Pages/Portfolio';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { UserContextProvider } from './context/UserContext';
 
 function App() {
-  const authCtx = useContext(AuthContext);
-  const isLoggedIn = authCtx.isLoggedIn;
-
   return (
     <Router>
-      <Header />
-
-      <Switch>
-        {!isLoggedIn && <Route exact path='/' component={Home} />}
-        {isLoggedIn && <Route exact path='/' component={Welcome} />}
-        {isLoggedIn && <Route path='/trade' component={Trade} />}
-        {isLoggedIn && <Route path='/portfolio' component={Portfolio} />}
-        <Route path='*'>
-          <Redirect to='/' />
-        </Route>
-        {/* <Route path="*" component={Home} /> */}
-        {/* <Route render={() => <Redirect to={{path: "/"}} />} /> */}
-      </Switch>
+      <UserContextProvider>
+        <div className='app' id='app-container'>
+          <main id='main-container'>
+            <Route path='/' exact component={Home} />
+          </main>
+        </div>
+      </UserContextProvider>
     </Router>
   );
 }
