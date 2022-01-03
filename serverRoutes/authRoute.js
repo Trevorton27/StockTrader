@@ -1,28 +1,66 @@
 const express = require('express');
 const router = express.Router();
-const authDataRoute = require('../dataRoutes/authDataRoute');
+const pool = require('../database/db');
+const bcrypt = require('bcrypt');
 
 router.post('/register', async (req, res) => {
-  const user = req.body.user;
-  const password = req.body.password;
-  const email = req.body.email;
+  try {
+    const { user, email, password } = req.body;
 
-  const registerdUser = await authDataRoute.registerUser(user, email, password);
-  res.status(201).send({ registerdUser });
+    const userSelected = await pool.query(
+      'SELECT * FROM users WHERE user_email = $1',
+      [email]
+    );
+
+    if (userSelected.rows.length > 0) {
+      return res.status(401).json('Invalid credentials.');
+    }
+
+    //const hashedPassword = bcrypt.hashSync(password, 10);
+    const newUser = await pool.query(
+      'INSERT INTO users (user_name, user_email, user_password) VALUES ($1, $2, $3) RETURNING *',
+      [user, email, password]
+    );
+
+    //console.log('newUser: ', newUser);
+    res.json({ id: newUser.rows[0].user_id, name: newUser.rows[0].user_name });
+  } catch (err) {
+    console.error('error from server- create new holding', err.message);
+    res.status(500).json({
+      errorMessage: 'Something went wrong on the server. Please try again.'
+    });
+  }
 });
 
 router.get('/login', async (req, res) => {
-  const password = req.body.password;
-  const email = req.body.email;
+  try {
+    const { email, password } = req.query;
 
-  const loginUser = await authDataRoute.loginUser(email, password);
+    const user = await pool.query(
+      'SELECT * FROM users WHERE user_email = ($1)',
+      [email]
+    );
 
-  if (!loginUser) {
-    res.status(401).json({
-      message: 'Login attempt failed.'
+    // check if user exist
+    if (user.rows.length === 0) {
+      return res.status(401).json('user does not exist.');
+    }
+
+    // // check passwords match http request and db
+    if (user.rows[0].user_password !== password) {
+      return res.status(401).json('Invalid password.');
+    }
+    //const storedPassword = user.rows[0].password;
+
+    // const match = bcrypt.compare(password, storedPassword);
+    // if (match) {
+    res.json({ id: user.rows[0].user_id, name: user.rows[0].user_name });
+    // }
+  } catch (err) {
+    console.error('error from server- create new holding', err.message);
+    res.status(500).json({
+      errorMessage: 'Something went wrong on the server. Please try again.'
     });
-  } else {
-    res.status(201).send({ loginUser });
   }
 });
 

@@ -1,11 +1,10 @@
-import axios from 'axios';
-import React, { useState, useRef, useContext } from 'react';
+import React from 'react';
 import RegisterForm from '../Components/RegisterForm';
-import LoginForm from '../Components/RegisterForm';
+import LoginForm from '../Components/LogInForm';
 import Welcome from './Welcome';
 
 const Home = () => {
-  if (!localStorage.getItem('data')) {
+  if (!localStorage.getItem('userData')) {
     return (
       <div id='home'>
         <h1 className='text-center display-4 text-light'>

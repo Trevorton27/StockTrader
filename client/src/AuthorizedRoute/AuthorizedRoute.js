@@ -6,7 +6,7 @@ const AuthorizedRoute = ({ component: Component, ...rest }) => {
     <Route
       {...rest}
       render={(props) => {
-        if (JSON.parse(sessionStorage.getItem('userData'))) {
+        if (JSON.parse(localStorage.getItem('userData'))) {
           return <Component />;
         } else {
           return (

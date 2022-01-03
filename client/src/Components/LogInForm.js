@@ -2,13 +2,13 @@ import React, { useState, useContext } from 'react';
 import axios from 'axios';
 import { Button, Modal, Form } from 'react-bootstrap';
 import { withRouter } from 'react-router-dom';
-import { UserNameContext } from '../context/UserNameContext';
+import { UserContext } from '../context/UserContext';
 
 const LoginForm = (props) => {
   const [show, setShow] = useState(false);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [userName, setUserName] = useContext(UserNameContext);
+  const [userName, setUserName] = useContext(UserContext);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -22,7 +22,7 @@ const LoginForm = (props) => {
           password: password
         }
       });
-      localStorage.setItem('data', JSON.stringify(response.data));
+      localStorage.setItem('userData', JSON.stringify(response.data));
       setUserName(response.data.name);
 
       props.history.push('/');

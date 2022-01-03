@@ -10,7 +10,7 @@ const RegisterForm = (props) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
-  const [userName, setUserName] = useContext(UserNameContext);
+  const [userName, setUserName] = useContext(UserContext);
   const [isMatch, setIsMatch] = useState(true);
   const handleConfirmPassword = (event) => {
     setConfirmPassword(event.target.value);
@@ -21,7 +21,7 @@ const RegisterForm = (props) => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  const createNewUser = async (e) => {
+  const registerUser = async (e) => {
     e.preventDefault();
 
     try {
@@ -31,12 +31,12 @@ const RegisterForm = (props) => {
         password: password
       });
 
-      localStorage.setItem('data', JSON.stringify(response.data));
+      localStorage.setItem('userData', JSON.stringify(response.data));
       setUserName(response.data.name);
 
-      props.history.push('/');
+      //  props.history.push('/');
     } catch (err) {
-      console.error('error in createUser', err.message);
+      console.error('error in registerUser', err.message);
     }
   };
 
@@ -49,7 +49,7 @@ const RegisterForm = (props) => {
         <Modal.Header>
           <Modal.Title> Register </Modal.Title>
         </Modal.Header>
-        <Form onSubmit={createNewUser}>
+        <Form onSubmit={registerUser}>
           <Form.Group controlId='username'>
             <Form.Label>Username</Form.Label>
             <Form.Control
@@ -59,17 +59,9 @@ const RegisterForm = (props) => {
               onChange={(e) => setUser(e.target.value)}
             />
           </Form.Group>
+
           <Form.Group controlId='email'>
-            <Form.Label>Username</Form.Label>
-            <Form.Control
-              type='emal'
-              placeholder='Email'
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-          </Form.Group>
-          <Form.Group controlId='email'>
-            <Form.Label>Username</Form.Label>
+            <Form.Label>Email</Form.Label>
             <Form.Control
               type='email'
               placeholder='Email'
@@ -101,6 +93,9 @@ const RegisterForm = (props) => {
               Passwords do not match
             </Form.Control.Feedback>
           </Form.Group>
+          <Button variant='primary' type='submit' onClick={handleClose}>
+            Submit
+          </Button>
         </Form>
       </Modal>
     </>

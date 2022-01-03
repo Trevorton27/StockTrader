@@ -1,4 +1,4 @@
-(this["webpackJsonpstock-trading-app"] = this["webpackJsonpstock-trading-app"] || []).push([[0],{
+(this["webpackJsonpstock-trading-app"] = this["webpackJsonpstock-trading-app"] || []).push([[2],{
 
 /***/ "../node_modules/object-assign/index.js":
 /*!**********************************************!*\
@@ -89721,4 +89721,4 @@ module.exports = g;
 /***/ })
 
 }]);
-//# sourceMappingURL=0.chunk.js.map
+//# sourceMappingURL=2.chunk.js.map

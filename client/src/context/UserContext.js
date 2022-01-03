@@ -6,8 +6,8 @@ export const UserContextProvider = (props) => {
   const [userName, setUserName] = useState('');
 
   useEffect(() => {
-    if (JSON.parse(sessionStorage.getItem('userData'))) {
-      setUserName(JSON.parse(sessionStorage.getItem('userData')).name);
+    if (JSON.parse(localStorage.getItem('userData'))) {
+      setUserName(JSON.parse(localStorage.getItem('userData')).name);
     }
   }, []);
 
