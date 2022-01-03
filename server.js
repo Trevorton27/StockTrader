@@ -2,10 +2,13 @@ require('dotenv').config();
 const express = require('express');
 const app = express();
 const path = require('path');
+app.use(express.json());
 
 app.use('/', express.static(path.join(__dirname, 'client/build')));
 
-const authRoute = require('./routes/authRoute');
+app.use(express.json());
+
+const authRoute = require('./serverRoutes/authRoute');
 app.use('/api/auth/', authRoute);
 
 app.get('/*', (req, res) => {

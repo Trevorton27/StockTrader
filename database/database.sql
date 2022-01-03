@@ -4,7 +4,7 @@ CREATE EXTENSION "uuid-ossp";
 
 CREATE TABLE users
 (
-  user_id uuid DEFAULT,
+  user_id serial,
   user_name VARCHAR(255) NOT NULL,
   user_email VARCHAR(255) NOT NULL UNIQUE,
   user_password VARCHAR(255) NOT NULL,
@@ -14,7 +14,7 @@ CREATE TABLE users
 CREATE TABLE public.holdings
 (
     holding_id serial,
-    user_id uuid REFERENCES users(user_id) NOT NULL,
+    user_id serial REFERENCES users(user_id) NOT NULL,
     name character varying NOT NULL,
     symbol character varying NOT NULL,
     shares integer NOT NULL,
