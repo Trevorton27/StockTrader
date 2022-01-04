@@ -1,5 +1,26 @@
 (this["webpackJsonpstock-trading-app"] = this["webpackJsonpstock-trading-app"] || []).push([["main"],{
 
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/Styles/home.css":
+/*!********************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/Styles/home.css ***!
+  \********************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Potta+One&display=swap);"]);
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap);"]);
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap);"]);
+// Module
+exports.push([module.i, "/* #home {\r\n  background: url('../images/stock-hero.jpg') no-repeat center center/cover;\r\n  height: 95vh;\r\n  position: relative;\r\n  padding: 40px;\r\n} */\r\n\r\n#home::before {\r\n  content: '';\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  width: 100%;\r\n  height: 100%;\r\n  background: rgba(0, 0, 0, 0.6);\r\n}\r\n\r\n#home * {\r\n  z-index: 10;\r\n}\r\n\r\n.home-card {\r\n  height: 100%;\r\n}\r\n\r\n.home-content {\r\n  width: 80%;\r\n  margin: auto;\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: center;\r\n  padding: 0 20px;\r\n  font-size: 1.3rem;\r\n  color: #fff;\r\n  font-family: 'Open Sans', sans-serif;\r\n}\r\n\r\n.home-content p {\r\n  font-size: 1.5rem;\r\n  text-align: start;\r\n}\r\n\r\n#home h1 {\r\n  text-align: start;\r\n  font-family: 'Source Code Pro', monospace;\r\n}\r\n\r\n.home-buttons-wrapper .btn {\r\n  margin-right: 20px;\r\n  font-size: 1.2rem;\r\n}\r\n\r\n.home-header {\r\n  font-family: 'Open Sans', sans-serif;\r\n  font-weight: 600;\r\n}\r\n\r\n#home .col-logo {\r\n  margin: auto;\r\n}\r\n\r\n.home-container {\r\n  display: grid;\r\n  grid-template-columns: 2fr 1fr;\r\n}\r\n\r\n.home-card .card-body a {\r\n  position: absolute;\r\n  bottom: 0;\r\n}\r\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/index.css":
 /*!**************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/index.css ***!
@@ -774,7 +795,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Components_RegisterForm__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Components/RegisterForm */ "./src/Components/RegisterForm.js");
 /* harmony import */ var _Components_LogInForm__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Components/LogInForm */ "./src/Components/LogInForm.js");
 /* harmony import */ var _Welcome__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Welcome */ "./src/Pages/Welcome.js");
+/* harmony import */ var _Styles_home_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Styles/home.css */ "./src/Styles/home.css");
+/* harmony import */ var _Styles_home_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_Styles_home_css__WEBPACK_IMPORTED_MODULE_4__);
 var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\Pages\\Home.js";
+
 
 
 
@@ -787,7 +811,7 @@ const Home = () => {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 9,
+        lineNumber: 10,
         columnNumber: 7
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
@@ -795,7 +819,7 @@ const Home = () => {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 10,
+        lineNumber: 11,
         columnNumber: 9
       }
     }, "Welcome to Stock Trader"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -803,7 +827,7 @@ const Home = () => {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 13,
+        lineNumber: 14,
         columnNumber: 9
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -811,21 +835,21 @@ const Home = () => {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 14,
+        lineNumber: 15,
         columnNumber: 11
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 15,
+        lineNumber: 16,
         columnNumber: 13
       }
     }, "Experience the thrill of the stock market without the risk."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 16,
+        lineNumber: 17,
         columnNumber: 13
       }
     }, "Before you start, please register to create an account."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -833,21 +857,21 @@ const Home = () => {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 17,
+        lineNumber: 18,
         columnNumber: 13
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Components_RegisterForm__WEBPACK_IMPORTED_MODULE_1__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 18,
+        lineNumber: 19,
         columnNumber: 15
       }
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Components_LogInForm__WEBPACK_IMPORTED_MODULE_2__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 19,
+        lineNumber: 20,
         columnNumber: 15
       }
     })))));
@@ -856,7 +880,7 @@ const Home = () => {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 26,
+        lineNumber: 27,
         columnNumber: 12
       }
     });
@@ -967,6 +991,36 @@ const Welcome = () => {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Welcome);
+
+/***/ }),
+
+/***/ "./src/Styles/home.css":
+/*!*****************************!*\
+  !*** ./src/Styles/home.css ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../node_modules/postcss-loader/src??postcss!./home.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/Styles/home.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
 
 /***/ }),
 
@@ -1128,5 +1182,5 @@ module.exports = __webpack_require__(/*! C:\Users\spira\OneDrive\Documents\Perso
 
 /***/ })
 
-},[[0,"runtime-main",2]]]);
+},[[0,"runtime-main",0]]]);
 //# sourceMappingURL=main.chunk.js.map

@@ -16,10 +16,10 @@ router.post('/register', async (req, res) => {
       return res.status(401).json('Invalid credentials.');
     }
 
-    //const hashedPassword = bcrypt.hashSync(password, 10);
+    const hashedPassword = bcrypt.hashSync(password, 10);
     const newUser = await pool.query(
       'INSERT INTO users (user_name, user_email, user_password) VALUES ($1, $2, $3) RETURNING *',
-      [user, email, password]
+      [user, email, hashedPassword]
     );
 
     //console.log('newUser: ', newUser);
@@ -34,28 +34,19 @@ router.post('/register', async (req, res) => {
 
 router.get('/login', async (req, res) => {
   try {
-    const { email, password } = req.query;
+    const { email, password } = req.body;
 
     const user = await pool.query(
       'SELECT * FROM users WHERE user_email = ($1)',
       [email]
     );
 
-    // check if user exist
-    if (user.rows.length === 0) {
-      return res.status(401).json('user does not exist.');
+    const match = bcrypt.compare(password, user.rows[0].password);
+    if (match) {
+      res.json({ id: user.rows[0].user_id, name: user.rows[0].user_name });
+    } else {
+      return res.status(401).json('Invalid credentials.');
     }
-
-    // // check passwords match http request and db
-    if (user.rows[0].user_password !== password) {
-      return res.status(401).json('Invalid password.');
-    }
-    //const storedPassword = user.rows[0].password;
-
-    // const match = bcrypt.compare(password, storedPassword);
-    // if (match) {
-    res.json({ id: user.rows[0].user_id, name: user.rows[0].user_name });
-    // }
   } catch (err) {
     console.error('error from server- create new holding', err.message);
     res.status(500).json({

@@ -2,6 +2,7 @@ import React from 'react';
 import RegisterForm from '../Components/RegisterForm';
 import LoginForm from '../Components/LogInForm';
 import Welcome from './Welcome';
+import '../Styles/home.css';
 
 const Home = () => {
   if (!localStorage.getItem('userData')) {
