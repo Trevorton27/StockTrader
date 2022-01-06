@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const pool = require('../database/db');
 const bcrypt = require('bcrypt');
+const jwt = require('jsonwebtoken');
 
 router.post('/register', async (req, res) => {
   try {
@@ -51,10 +52,16 @@ router.get('/login', async (req, res) => {
     // }
 
     // res.json({ id: user.rows[0].user_id, name: user.rows[0].user_name });
-
+    const isAuthenticated = jwt.sign(user, process.env.TOKEN_SECRET_KEY, {
+      expiresIn: '3600000'
+    });
     const match = bcrypt.compare(password, user.rows[0].password);
     if (match) {
-      res.json({ id: user.rows[0].user_id, name: user.rows[0].user_name });
+      res.json({
+        id: user.rows[0].user_id,
+        name: user.rows[0].user_name,
+        authToken: isAuthenticated
+      });
     } else {
       return res.status(401).json('Invalid credentials.');
     }
