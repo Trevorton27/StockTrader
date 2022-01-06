@@ -34,12 +34,23 @@ router.post('/register', async (req, res) => {
 
 router.get('/login', async (req, res) => {
   try {
-    const { email, password } = req.body;
+    const { email, password } = req.query;
 
     const user = await pool.query(
       'SELECT * FROM users WHERE user_email = ($1)',
       [email]
     );
+
+    // if (user.rows.length === 0) {
+    //   return res.status(401).json('Invalid credentials');
+    // }
+
+    // // check passwords match http request and db
+    // if (user.rows[0].user_password !== password) {
+    //   return res.status(401).json('Invalid credentials.');
+    // }
+
+    // res.json({ id: user.rows[0].user_id, name: user.rows[0].user_name });
 
     const match = bcrypt.compare(password, user.rows[0].password);
     if (match) {
