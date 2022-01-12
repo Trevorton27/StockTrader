@@ -420,6 +420,385 @@ const HoldingsChart = () => {
 
 /***/ }),
 
+/***/ "./src/Components/Charts/StockInfoChart.js":
+/*!*************************************************!*\
+  !*** ./src/Components/Charts/StockInfoChart.js ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_chartjs_2__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-chartjs-2 */ "./node_modules/react-chartjs-2/es/index.js");
+/* harmony import */ var react_chartjs_2__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_chartjs_2__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
+var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\Components\\Charts\\StockInfoChart.js";
+
+
+
+
+const StockInfoChart = _ref => {
+  let {
+    symbol
+  } = _ref;
+  const [chartData, setChartData] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({});
+  const [holdingDays, setHoldingDays] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
+  const [holdingPrices, setHoldingPrices] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    const getHoldingPricesByDates = async () => {
+      try {
+        const response = await axios__WEBPACK_IMPORTED_MODULE_2___default.a.get(`api/stocks/chart/?symbol=${symbol}`);
+        setDatesAndPricesStates(response.data);
+      } catch (err) {
+        console.error('error in getHoldingPricesByDates', err.message);
+      }
+    };
+
+    getHoldingPricesByDates();
+  }, [symbol]);
+
+  const setDatesAndPricesStates = data => {
+    for (let i = 0; data.length > i; i++) {
+      setHoldingDays(prevState => [...prevState, data[i].label]);
+      setHoldingPrices(prevState => [...prevState, data[i].close]);
+    }
+  };
+
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    if (holdingDays.length > 0) {
+      setChartData({
+        labels: holdingDays,
+        datasets: [{
+          label: symbol,
+          data: holdingPrices,
+          backgroundColor: ['rgba(255, 99, 132, 0.6)', 'rgba(54, 162, 235, 0.6)', 'rgba(255, 206, 86, 0.6)', 'rgba(75, 192, 192, 0.6)', 'rgba(153, 102, 255, 0.6)', 'rgba(255, 159, 64, 0.6)', 'rgba(255, 99, 132, 0.6)']
+        }]
+      });
+    }
+  }, [holdingPrices, holdingDays, symbol]);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "chart",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53,
+      columnNumber: 5
+    }
+  }, holdingDays.length > 0 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_chartjs_2__WEBPACK_IMPORTED_MODULE_1__["Line"], {
+    data: holdingDays.length > 0 ? chartData : null,
+    options: {
+      title: {
+        display: true,
+        text: `Average Prices For ${symbol} last 10 business days`,
+        fontSize: 20
+      },
+      legend: {
+        display: true,
+        position: 'right'
+      },
+      scales: {
+        yAxes: [{
+          scaleLabel: {
+            display: true,
+            labelString: 'Price',
+            fontSize: 15,
+            fontStyle: 'italic'
+          }
+        }],
+        xAxes: [{
+          scaleLabel: {
+            display: true,
+            labelString: 'Date',
+            fontSize: 15,
+            fontStyle: 'italic'
+          }
+        }]
+      }
+    },
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 55,
+      columnNumber: 9
+    }
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (StockInfoChart);
+
+/***/ }),
+
+/***/ "./src/Components/CurrentHoldings.js":
+/*!*******************************************!*\
+  !*** ./src/Components/CurrentHoldings.js ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/index.js");
+var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\Components\\CurrentHoldings.js";
+
+
+
+
+const CurrentHoldings = _ref => {
+  let {
+    holding
+  } = _ref;
+  const [holdingStyleColor, setHoldingStyleColor] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])('');
+  const [positiveSign, setPositiveSign] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    const isHoldingNegativeOrPositive = () => {
+      if (String(percent_change).charAt(0) === '-') {
+        setHoldingStyleColor('red');
+        setPositiveSign(false);
+      } else {
+        setHoldingStyleColor('green');
+        setPositiveSign('+');
+      }
+    };
+
+    isHoldingNegativeOrPositive();
+  }, []);
+  const {
+    name,
+    symbol,
+    price,
+    percent_change,
+    shares,
+    created_at
+  } = holding;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "selected-holding card mt-4",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25,
+      columnNumber: 5
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "card-head",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26,
+      columnNumber: 7
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27,
+      columnNumber: 9
+    }
+  }, name, ": ", symbol), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "card-buttons",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: {
+      pathname: '/main',
+      search: `?symbol=${symbol}`
+    },
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31,
+      columnNumber: 11
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Button"], {
+    variant: "primary",
+    size: "md",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32,
+      columnNumber: 13
+    }
+  }, "Trade")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
+    className: "ml-2",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38,
+      columnNumber: 7
+    }
+  }, "Date purchased: ", created_at), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39,
+      columnNumber: 7
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "card-body",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 40,
+      columnNumber: 7
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "Holding Value:",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42,
+      columnNumber: 11
+    }
+  }, "Shares Total Value:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: holdingStyleColor,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43,
+      columnNumber: 11
+    }
+  }, "$", Number(price * shares).toFixed(2))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "shares",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48,
+      columnNumber: 11
+    }
+  }, "Number Of Shares:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 49,
+      columnNumber: 11
+    }
+  }, shares)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "last-price",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 52,
+      columnNumber: 11
+    }
+  }, "Current Stock Value:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: holdingStyleColor,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53,
+      columnNumber: 11
+    }
+  }, "$", price)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "percent-change",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 55,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 56,
+      columnNumber: 11
+    }
+  }, "Percent Change:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: holdingStyleColor,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 57,
+      columnNumber: 11
+    }
+  }, positiveSign, percent_change, "%"))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (CurrentHoldings);
+
+/***/ }),
+
+/***/ "./src/Components/Headers/PortfolioHeader.js":
+/*!***************************************************!*\
+  !*** ./src/Components/Headers/PortfolioHeader.js ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\Components\\Headers\\PortfolioHeader.js";
+
+
+const PortfolioHeader = () => {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "text-center mt-3",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5,
+      columnNumber: 5
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6,
+      columnNumber: 7
+    }
+  }, "Portfolio"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7,
+      columnNumber: 7
+    }
+  }, "Each account starts with $10,000 fake dollars. Gamble responsibly."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10,
+      columnNumber: 7
+    }
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (PortfolioHeader);
+
+/***/ }),
+
 /***/ "./src/Components/Headers/TradeHeader.js":
 /*!***********************************************!*\
   !*** ./src/Components/Headers/TradeHeader.js ***!
@@ -1217,6 +1596,78 @@ const NavBar = props => {
 
 /***/ }),
 
+/***/ "./src/Components/NoHoldings.js":
+/*!**************************************!*\
+  !*** ./src/Components/NoHoldings.js ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/index.js");
+var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\Components\\NoHoldings.js";
+
+
+
+
+const NoHoldings = () => {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Card"], {
+    className: "text-center mt-5",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7,
+      columnNumber: 5
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Card"].Body, {
+    className: "d-block border",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8,
+      columnNumber: 7
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Card"].Title, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9,
+      columnNumber: 9
+    }
+  }, "You don't own any holdings as of yet."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Card"].Text, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10,
+      columnNumber: 9
+    }
+  }, "Go to our Trade page to start purchasing new stocks.", ' '), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "/main",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Button"], {
+    variant: "primary",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14,
+      columnNumber: 11
+    }
+  }, "Trade Page"))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (NoHoldings);
+
+/***/ }),
+
 /***/ "./src/Components/RegisterForm.js":
 /*!****************************************!*\
   !*** ./src/Components/RegisterForm.js ***!
@@ -1468,7 +1919,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Modals_BuyStockModal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Modals/BuyStockModal */ "./src/Components/Modals/BuyStockModal.js");
 /* harmony import */ var _Modals_SellStockModal__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Modals/SellStockModal */ "./src/Components/Modals/SellStockModal.js");
 /* harmony import */ var _utilities_tradingUtilities__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../utilities/tradingUtilities */ "./src/utilities/tradingUtilities.js");
-/* harmony import */ var _Charts_HoldingsChart__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Charts/HoldingsChart */ "./src/Components/Charts/HoldingsChart.js");
+/* harmony import */ var _Charts_StockInfoChart__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Charts/StockInfoChart */ "./src/Components/Charts/StockInfoChart.js");
 var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\Components\\SelectHolding.js";
 
 
@@ -1706,7 +2157,7 @@ const SelectedHolding = _ref => {
       lineNumber: 126,
       columnNumber: 13
     }
-  }, shares)))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Charts_HoldingsChart__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, shares)))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Charts_StockInfoChart__WEBPACK_IMPORTED_MODULE_4__["default"], {
     symbol: symbol,
     __self: undefined,
     __source: {
@@ -1800,6 +2251,96 @@ const ShowAlert = props => {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (ShowAlert);
+
+/***/ }),
+
+/***/ "./src/Components/UserInformation.js":
+/*!*******************************************!*\
+  !*** ./src/Components/UserInformation.js ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _context_UserContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../context/UserContext */ "./src/context/UserContext.js");
+/* harmony import */ var _utilities_portfolioUtilities__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utilities/portfolioUtilities */ "./src/utilities/portfolioUtilities.js");
+/* harmony import */ var react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-bootstrap/Card */ "./node_modules/react-bootstrap/esm/Card.js");
+/* harmony import */ var react_bootstrap_ListGroup__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-bootstrap/ListGroup */ "./node_modules/react-bootstrap/esm/ListGroup.js");
+var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\Components\\UserInformation.js";
+
+
+
+
+
+
+function UserInformation() {
+  const userName = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(_context_UserContext__WEBPACK_IMPORTED_MODULE_1__["UserContext"]);
+  const [wallet, setWallet] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0);
+  const [totalHoldingsAmount, setTotalHoldingsAmount] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0);
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    const fetchWalletData = async () => {
+      Object(_utilities_portfolioUtilities__WEBPACK_IMPORTED_MODULE_2__["getWalletData"])().then(res => {
+        setWallet(res.wallet);
+        setTotalHoldingsAmount(res.holdingsAmount);
+      }).catch(err => console.error('error get wallet', err));
+    };
+
+    fetchWalletData();
+  }, []);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    className: "user-info mt-3 w-50",
+    align: "center",
+    border: "dark",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25,
+      columnNumber: 5
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_3__["default"].Header, {
+    className: "h4",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26,
+      columnNumber: 7
+    }
+  }, "Account Information"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap_ListGroup__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    className: "h5",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27,
+      columnNumber: 7
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap_ListGroup__WEBPACK_IMPORTED_MODULE_4__["default"].Item, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28,
+      columnNumber: 9
+    }
+  }, "User: ", userName), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap_ListGroup__WEBPACK_IMPORTED_MODULE_4__["default"].Item, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29,
+      columnNumber: 9
+    }
+  }, "Account Balance: $", wallet.toFixed(1)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap_ListGroup__WEBPACK_IMPORTED_MODULE_4__["default"].Item, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30,
+      columnNumber: 9
+    }
+  }, "Total Holding Value: $", totalHoldingsAmount.toFixed(1))));
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (UserInformation);
 
 /***/ }),
 
@@ -1924,25 +2465,94 @@ const Home = () => {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Components_UserInformation__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Components/UserInformation */ "./src/Components/UserInformation.js");
+/* harmony import */ var _Components_CurrentHoldings__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Components/CurrentHoldings */ "./src/Components/CurrentHoldings.js");
+/* harmony import */ var _Components_NoHoldings__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../Components/NoHoldings */ "./src/Components/NoHoldings.js");
+/* harmony import */ var _Components_Headers_PortfolioHeader__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Components/Headers/PortfolioHeader */ "./src/Components/Headers/PortfolioHeader.js");
+/* harmony import */ var _Components_Charts_HoldingsChart__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../Components/Charts/HoldingsChart */ "./src/Components/Charts/HoldingsChart.js");
+/* harmony import */ var _utilities_tradingUtilities__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../utilities/tradingUtilities */ "./src/utilities/tradingUtilities.js");
 var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\Pages\\Portfolio.js";
 
 
+
+
+
+
+
+
 const Portfolio = () => {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  const [holdings, setHoldings] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    const fetchHoldingsData = () => {
+      Object(_utilities_tradingUtilities__WEBPACK_IMPORTED_MODULE_6__["getHoldings"])().then(holdingsData => {
+        setHoldings(holdingsData);
+      }).catch(err => console.error('error get holdings', err));
+    };
+
+    fetchHoldingsData();
+  }, []);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
+    className: "portfolio-container text-size container",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5,
+      lineNumber: 24,
       columnNumber: 5
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Components_Headers_PortfolioHeader__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6,
+      lineNumber: 25,
       columnNumber: 7
     }
-  }, "Welcome to the Portfolio Page"));
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "portfolio-top-wrapper d-flex align-items-start",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26,
+      columnNumber: 7
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Components_UserInformation__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27,
+      columnNumber: 9
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Components_Charts_HoldingsChart__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28,
+      columnNumber: 9
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "user-holdings-list container",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30,
+      columnNumber: 7
+    }
+  }, holdings.length > 0 ? holdings.map(holding => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Components_CurrentHoldings__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    holding: holding,
+    key: holding.holding_id,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33,
+      columnNumber: 13
+    }
+  })) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Components_NoHoldings__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36,
+      columnNumber: 11
+    }
+  })));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Portfolio);

@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import BuyStockModal from './Modals/BuyStockModal';
 import SellStockModal from './Modals/SellStockModal';
 import { getHoldings } from '../utilities/tradingUtilities';
-import HoldingsChart from './Charts/HoldingsChart';
+import StockInfoChart from './Charts/StockInfoChart';
 
 const SelectedHolding = ({
   selectedHolding,
@@ -127,7 +127,7 @@ const SelectedHolding = ({
           </div>
         </div>
       </div>
-      <HoldingsChart symbol={symbol} />
+      <StockInfoChart symbol={symbol} />
     </>
   );
 };

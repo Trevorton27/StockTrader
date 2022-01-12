@@ -2,7 +2,6 @@ const { json } = require('express');
 const express = require('express');
 const router = express.Router();
 const pool = require('../database/db');
-const portfolioData = require('../dataRoutes/portfolioDataRoute');
 
 router.get('/wallet/:user_id', async (req, res) => {
   try {

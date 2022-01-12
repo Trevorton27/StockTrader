@@ -8,8 +8,16 @@ app.use('/', express.static(path.join(__dirname, 'client/build')));
 
 app.use(express.json());
 
-const authRoute = require('./serverRoutes/authRoute');
-app.use('/api/auth/', authRoute);
+const authRoutes = require('./serverRoutes/authRoutes');
+app.use('/api/auth/', authRoutes);
+
+const holdingsRoutes = require('./serverRoutes/holdingsRoutes');
+app.use('/api/holdings/', holdingsRoutes);
+
+const portfolioRoutes = require('./serverRoutes/portfolioRoutes');
+app.use('/api/portfolio/', portfolioRoutes);
+const apiRoutes = require('./serverRoutes/IEXapiRoutes');
+app.use('/api/stocks/', apiRoutes);
 
 app.get('/*', (req, res) => {
   res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
