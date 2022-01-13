@@ -45,12 +45,14 @@
 
 #home h1 {
   text-align: start;
-  font-family: 'Source Code Pro', monospace;
+
+  color: #fff;
 }
 
 .home-buttons-wrapper .btn {
   margin-right: 20px;
   font-size: 1.2rem;
+  text-align: center;
 }
 
 .home-header {

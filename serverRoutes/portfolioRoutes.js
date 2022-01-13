@@ -4,7 +4,7 @@ const pool = require('../database/db');
 
 router.get('/wallet/:user_id', async (req, res) => {
   try {
-    const wallet = 10000;
+    const wallet = 100000;
     let holdingsAmount = 0;
     const { user_id } = req.params;
     const response = await pool.query(
@@ -21,7 +21,7 @@ router.get('/wallet/:user_id', async (req, res) => {
       err.message
     );
     res.status(500).json({
-      errorMessage: 'Something went wrong on the server. Please try again.',
+      errorMessage: 'Something went wrong on the server. Please try again.'
     });
   }
 });

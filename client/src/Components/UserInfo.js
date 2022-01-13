@@ -12,23 +12,23 @@ function UserInformation() {
   useEffect(() => {
     const fetchWalletData = async () => {
       getWalletData()
-        .then(res => {
+        .then((res) => {
           setWallet(res.wallet);
           setTotalHoldingsAmount(res.holdingsAmount);
         })
-        .catch(err => console.error('error get wallet', err));
+        .catch((err) => console.error('error get wallet', err));
     };
     fetchWalletData();
   }, []);
 
   return (
-    <Card className="user-info mt-3 w-50" align="center" border="dark">
-      <Card.Header className="h4">Account Information</Card.Header>
-      <ListGroup className="h5">
+    <Card className='user-info mt-3 w-50' align='center' border='dark'>
+      <Card.Header className='h4'>Account Information</Card.Header>
+      <ListGroup className='h5'>
         <ListGroup.Item>User: {userName}</ListGroup.Item>
-        <ListGroup.Item>Account Balance: ${wallet.toFixed(1)}</ListGroup.Item>
+        <ListGroup.Item>Account Balance: ${wallet.toFixed(2)}</ListGroup.Item>
         <ListGroup.Item>
-          Total Holding Value: ${totalHoldingsAmount.toFixed(1)}
+          Total Holding Value: ${totalHoldingsAmount.toFixed(2)}
         </ListGroup.Item>
       </ListGroup>
     </Card>

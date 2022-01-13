@@ -21,6 +21,4 @@
 todonext.txt 
 
 npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-server-old.js
+yarn-debug.log* 

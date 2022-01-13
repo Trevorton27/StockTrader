@@ -3,7 +3,7 @@ import axios from 'axios';
 export const getWalletData = async () => {
   try {
     const response = await axios.get(
-      `/api/portfolio/wallet/${JSON.parse(localStorage.getItem('data')).id}`
+      `/api/portfolio/wallet/${JSON.parse(localStorage.getItem('userData')).id}`
     );
     return response.data;
   } catch (err) {

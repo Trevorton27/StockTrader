@@ -2,12 +2,12 @@ import React, { useState, useEffect, createContext } from 'react';
 
 export const UserNameContext = createContext();
 
-export const UserNameProvider = props => {
+export const UserNameProvider = (props) => {
   const [userName, setUserName] = useState('');
 
   useEffect(() => {
-    if (JSON.parse(localStorage.getItem('data'))) {
-      setUserName(JSON.parse(localStorage.getItem('data')).name);
+    if (JSON.parse(localStorage.getItem('userData'))) {
+      setUserName(JSON.parse(localStorage.getItem('userData')).name);
     }
   }, []);
 

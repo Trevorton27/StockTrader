@@ -5,8 +5,8 @@ const ProtectedRoute = ({ component: Component, ...rest }) => {
   return (
     <Route
       {...rest}
-      render={props => {
-        if (JSON.parse(localStorage.getItem('data'))) {
+      render={(props) => {
+        if (JSON.parse(localStorage.getItem('userData'))) {
           return <Component />;
         } else {
           return (
