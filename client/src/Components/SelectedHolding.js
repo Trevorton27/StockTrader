@@ -8,7 +8,7 @@ const SelectedHolding = ({
   selectedHolding,
   buyShares,
   sellShares,
-  updateShares,
+  updateShares
 }) => {
   const [shares, setShares] = useState(0);
   const [holdings, setHoldings] = useState([]);
@@ -26,8 +26,8 @@ const SelectedHolding = ({
 
   const getHoldingsData = () => {
     getHoldings()
-      .then(holdingsData => setHoldings(holdingsData))
-      .catch(err => console.error('error get holdings', err));
+      .then((holdingsData) => setHoldings(holdingsData))
+      .catch((err) => console.error('error get holdings', err));
   };
 
   const isHoldingNegativeOrPositive = () => {
@@ -44,22 +44,22 @@ const SelectedHolding = ({
     isHoldingNegativeOrPositive();
   }, [selectedHolding]);
 
-  const handleBuyShares = shares => {
+  const handleBuyShares = (shares) => {
     updateShares(shares);
     buyShares(selectedHolding, shares);
-    setShares(prevState => prevState + parseInt(shares));
+    setShares((prevState) => prevState + parseInt(shares));
   };
 
-  const handleSellShares = shares => {
+  const handleSellShares = (shares) => {
     sellShares(selectedHolding, shares);
     updateShares(shares);
-    setShares(prevState => prevState - parseInt(shares));
+    setShares((prevState) => prevState - parseInt(shares));
   };
 
   const compareSelectedHoldingToExisting = () => {
     if (selectedHolding) {
       const holdingExist = holdings.find(
-        holding => holding.symbol == selectedHolding.symbol
+        (holding) => holding.symbol === selectedHolding.symbol
       );
       if (holdingExist) {
         setShares(holdingExist.shares);
@@ -72,18 +72,18 @@ const SelectedHolding = ({
     latestPrice,
     previousClose,
     changePercent,
-    change,
+    change
   } = selectedHolding;
 
   return (
     <>
-      <div className="selected-holding card mt-4">
-        <div className="card-head">
+      <div className='selected-holding card mt-4'>
+        <div className='card-head'>
           <h2>
             {' '}
             {companyName}: {symbol}
           </h2>
-          <div className="card-buttons">
+          <div className='card-buttons'>
             <BuyModal
               handleBuyShares={handleBuyShares}
               selectedHolding={selectedHolding}
@@ -97,8 +97,8 @@ const SelectedHolding = ({
           </div>
         </div>
         <hr />
-        <div className="card-body">
-          <div className="price">
+        <div className='card-body'>
+          <div className='price'>
             <strong>Current Price</strong>
             <p className={`mb-0 ${holdingStyleColor}`}>
               ${latestPrice.toFixed(2)}
@@ -107,20 +107,20 @@ const SelectedHolding = ({
               Previous Closed: ${previousClose.toFixed(2)}{' '}
             </small>
           </div>
-          <div className="percent">
+          <div className='percent'>
             <strong>Percent Change</strong>
             <p className={holdingStyleColor}>
               {positiveSign}
               {changePercent.toFixed(3)}%
             </p>
           </div>
-          <div className="change">
+          <div className='change'>
             <strong>Daily Gain/Loss</strong>
             <p className={holdingStyleColor}>
               {positiveSign}${change}
             </p>
           </div>
-          <div className="shares-held">
+          <div className='shares-held'>
             <strong>Shares Held</strong>
             <p>{shares}</p>
           </div>

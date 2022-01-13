@@ -10,8 +10,8 @@ function RenderRecommendations(props) {
 
   useEffect(() => {
     getHoldings()
-      .then(holdingsData => setHoldings(holdingsData))
-      .catch(err => console.error('error get holdings', err));
+      .then((holdingsData) => setHoldings(holdingsData))
+      .catch((err) => console.error('error get holdings', err));
 
     const isHoldingNegativeOrPositive = () => {
       if (String(changePercent).charAt(0) === '-') {
@@ -29,7 +29,7 @@ function RenderRecommendations(props) {
   useEffect(() => {
     const compareSelectedHoldingToExistingList = () => {
       const holdingExist = holdings.find(
-        holding => holding.symbol == props.recommendedHolding.symbol
+        (holding) => holding.symbol === props.recommendedHolding.symbol
       );
       if (holdingExist) {
         setShares(holdingExist.shares);
@@ -39,50 +39,45 @@ function RenderRecommendations(props) {
     compareSelectedHoldingToExistingList();
   }, [holdings]);
 
-  const {
-    companyName,
-    latestPrice,
-    changePercent,
-    change,
-    symbol,
-  } = props.recommendedHolding;
+  const { companyName, latestPrice, changePercent, change, symbol } =
+    props.recommendedHolding;
 
   return (
-    <div className="recommended-holding">
-      <div className="selected-holding card mt-3">
-        <div className="card-head">
+    <div className='recommended-holding'>
+      <div className='selected-holding card mt-3'>
+        <div className='card-head'>
           <h3>
             {' '}
-            {companyName}: {symbol}
+            {companyName}: Stock Symbol {symbol}
           </h3>
           <Button
-            href="#goup"
-            variant="outline-primary"
+            href='#goup'
+            variant='outline-primary'
             onClick={() => props.handleTrade(symbol)}
           >
             Trade
           </Button>{' '}
         </div>
         <hr />
-        <div className="card-body">
-          <div className="price">
+        <div className='card-body'>
+          <div className='price'>
             <strong>Current Price</strong>
             <p className={holdingStyleColor}>${latestPrice.toFixed(2)}</p>
           </div>
-          <div className="percent">
+          <div className='percent'>
             <strong>Percent Change</strong>
             <p className={holdingStyleColor}>
               {positiveSign}
               {changePercent.toFixed(3)}%
             </p>
           </div>
-          <div className="change">
+          <div className='change'>
             <strong>Daily Gain/Loss</strong>
             <p className={holdingStyleColor}>
               {positiveSign}${change}
             </p>
           </div>
-          <div className="shares-held">
+          <div className='shares-held'>
             <strong>Shares Held</strong>
             <p>{shares}</p>
           </div>

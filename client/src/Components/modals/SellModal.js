@@ -1,7 +1,7 @@
 import React, { useState, Fragment } from 'react';
 import { Button, Modal, Form, Alert } from 'react-bootstrap';
 
-const SellModal = props => {
+const SellModal = (props) => {
   const [show, setShow] = useState(false);
   const [isShowAlert, setShowAlert] = useState(false);
   const [sharesInput, setSharesInput] = useState('');
@@ -27,7 +27,7 @@ const SellModal = props => {
   const { companyName, symbol, latestPrice } = props.selectedHolding;
   return (
     <Fragment>
-      <Button variant="secondary" onClick={handleShow}>
+      <Button variant='secondary' onClick={handleShow}>
         Sell Stocks
       </Button>
 
@@ -39,17 +39,17 @@ const SellModal = props => {
         </Modal.Header>
         <Modal.Body>
           <Form>
-            <h5 className="text-center">Share value: ${latestPrice}</h5>
-            <h5 className="text-center">Current Shares Held: {props.shares}</h5>
-            <Form.Group controlId="formBasicEmail">
+            <h5 className='text-center'>Share value: ${latestPrice}</h5>
+            <h5 className='text-center'>Current Shares Held: {props.shares}</h5>
+            <Form.Group controlId='formBasicEmail'>
               <Form.Label> Share quantity</Form.Label>
               <Form.Control
-                type="number"
-                placeholder="Shares"
+                type='number'
+                placeholder='Shares'
                 value={sharesInput}
-                onChange={e => setSharesInput(e.target.value)}
+                onChange={(e) => setSharesInput(e.target.value)}
               />
-              <Form.Text className="total-price">
+              <Form.Text className='total-price'>
                 {sharesInput
                   ? '$' + (sharesInput * latestPrice).toFixed(2)
                   : 'Total amount'}
@@ -59,23 +59,25 @@ const SellModal = props => {
         </Modal.Body>
         {isShowAlert && (
           <Alert
-            variant="danger"
+            variant='danger'
             onClose={() => setShowAlert(false)}
             dismissible
-            className="alert">
+            className='alert'
+          >
             <p> You don't own enough shares to make that transaction</p>
           </Alert>
         )}
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
+          <Button variant='secondary' onClick={handleClose}>
             Cancel Order
           </Button>
           <Button
-            variant="primary"
+            variant='primary'
             onClick={() => {
               handleClose();
               handleSubmit();
-            }}>
+            }}
+          >
             Sell Shares
           </Button>
         </Modal.Footer>
