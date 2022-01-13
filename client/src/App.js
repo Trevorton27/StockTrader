@@ -1,27 +1,35 @@
 import React from 'react';
-import Home from './Pages/Home';
-import NavBar from './Components/NavBar';
-import Trade from './Pages/Trade';
-import Portfolio from './Pages/Portfolio';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import { UserContextProvider } from './context/UserContext';
-import AuthorizedRoute from './AuthorizedRoute/AuthorizedRoute';
+import './style/index.css';
+import './style/home.css';
+import './style/mobile.css';
+import './style/beginners.css';
+import './style/trade.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Navigation from './components/Navigation';
+import HomeScreen from './screens/HomeScreen';
+import TradeScreen from './screens/TradeScreen';
+import BeginnersScreen from './screens/BeginnersScreen';
+import PortfolioScreen from './screens/PortfolioScreen';
+import ProtectedRoute from './protected-routes/ProtectedRoute';
+import { UserNameProvider } from './context/UserNameContext';
 
-function App() {
+const App = () => {
   return (
     <Router>
-      <UserContextProvider>
-        <div className='app' id='app-container'>
-          <NavBar />
-          <main id='main-container'>
-            <Route path='/' exact component={Home} />
-            <AuthorizedRoute path='/trade' component={Trade} />
-            <AuthorizedRoute path='/portfolio' component={Portfolio} />
+      <UserNameProvider>
+        <div className="app" id="app-container">
+          <Navigation />
+          <main id="main-container">
+            <Route path="/" exact component={HomeScreen} />
+            <ProtectedRoute path="/main" component={TradeScreen} />
+            <ProtectedRoute path="/portfolio" component={PortfolioScreen} />
+            <ProtectedRoute path="/instructions" component={BeginnersScreen} />
           </main>
         </div>
-      </UserContextProvider>
+      </UserNameProvider>
     </Router>
   );
-}
+};
 
 export default App;

@@ -2,7 +2,6 @@ const express = require('express');
 const router = express.Router();
 const pool = require('../database/db');
 const bcrypt = require('bcrypt');
-const jwt = require('jsonwebtoken');
 
 router.post('/register', async (req, res) => {
   try {
@@ -14,7 +13,7 @@ router.post('/register', async (req, res) => {
     );
 
     if (userSelected.rows.length > 0) {
-      return res.status(401).json('Invalid credentials.');
+      return res.status(401).json('User already exists!');
     }
 
     const hashedPassword = bcrypt.hashSync(password, 10);
@@ -22,8 +21,7 @@ router.post('/register', async (req, res) => {
       'INSERT INTO users (user_name, user_email, user_password) VALUES ($1, $2, $3) RETURNING *',
       [user, email, hashedPassword]
     );
-
-    //console.log('newUser: ', newUser);
+    console.log('newUser: ', newUser);
     res.json({ id: newUser.rows[0].user_id, name: newUser.rows[0].user_name });
   } catch (err) {
     console.error('error from server- create new holding', err.message);
@@ -42,19 +40,16 @@ router.get('/login', async (req, res) => {
       [email]
     );
 
+    // check if user exist
     // if (user.rows.length === 0) {
-    //   return res.status(401).json('Invalid credentials');
+    //   return res.status(401).json("User doesn't exist!");
     // }
 
     // // check passwords match http request and db
     // if (user.rows[0].user_password !== password) {
-    //   return res.status(401).json('Invalid credentials.');
+    //   return res.status(401).json("Password don't match");
     // }
 
-    // res.json({ id: user.rows[0].user_id, name: user.rows[0].user_name });
-    // const isAuthenticated = jwt.sign(user, process.env.TOKEN_SECRET_KEY, {
-    //   expiresIn: '3600000'
-    // });
     const match = bcrypt.compare(password, user.rows[0].password);
     if (match) {
       res.json({

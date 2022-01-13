@@ -8,7 +8,8 @@
     "main.js.map": "/js/main.chunk.js.map",
     "runtime-main.js": "/js/bundle.js",
     "runtime-main.js.map": "/js/bundle.js.map",
-    "index.html": "/index.html"
+    "index.html": "/index.html",
+    "media/stock-hero.jpg": "/media/stock-hero.eecd15dc.jpg"
   },
   "entrypoints": [
     "js/bundle.js",

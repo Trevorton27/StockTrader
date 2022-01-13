@@ -2,23 +2,17 @@ require('dotenv').config();
 const express = require('express');
 const app = express();
 const path = require('path');
-app.use(express.json());
 
-app.use('/', express.static(path.join(__dirname, 'client/build')));
+app.use('/', express.static(path.join(__dirname, 'client/build'))); // Set build folder
 
-app.use(express.json());
+app.use(express.json()); // access req.body
 
-const authRoutes = require('./serverRoutes/authRoutes');
-app.use('/api/auth/', authRoutes);
+app.use('/api/holdings/', require('./serverRoutes/holdingsRoutes'));
+app.use('/api/portfolio/', require('./serverRoutes/portfolioRoutes'));
+app.use('/api/auth/', require('./serverRoutes/authRoutes'));
+app.use('/api/stocks/', require('./serverRoutes/apiRoutes'));
 
-const holdingsRoutes = require('./serverRoutes/holdingsRoutes');
-app.use('/api/holdings/', holdingsRoutes);
-
-const portfolioRoutes = require('./serverRoutes/portfolioRoutes');
-app.use('/api/portfolio/', portfolioRoutes);
-const apiRoutes = require('./serverRoutes/IEXapiRoutes');
-app.use('/api/stocks/', apiRoutes);
-
+// Catch all
 app.get('/*', (req, res) => {
   res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
 });

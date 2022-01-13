@@ -7,7 +7,6 @@
     },
     "main": "server.js",
     "scripts": {
-        
         "client": "npm run watch --prefix client",
         "dev": "concurrently \"nodemon server.js\" \"npm run client\"",
         "heroku-prebuild": "npm install && npm i --prefix client && npm run build --prefix client"
@@ -16,7 +15,7 @@
     "license": "ISC",
     "dependencies": {
         "axios": "^0.21.0",
-        "bcrypt": "^5.0.0",
+        "bcrypt": "^5.0.1",
         "dotenv": "^8.2.0",
         "express": "^4.17.1",
         "jsonwebtoken": "^8.5.1",

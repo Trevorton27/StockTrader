@@ -1,27 +1,27 @@
-const { json } = require('express');
 const express = require('express');
 const router = express.Router();
 const pool = require('../database/db');
 
 router.get('/wallet/:user_id', async (req, res) => {
   try {
-    const wallet = 100000;
+    const wallet = 10000;
     let holdingsAmount = 0;
     const { user_id } = req.params;
-
-    const updateWallet = portfolioDataRoute.updateWallet(
-      wallet,
-      holdingsAmount,
-      user_id
+    const response = await pool.query(
+      'SELECT * FROM holdings WHERE user_id = ($1)',
+      [user_id]
     );
-    json.res(updateWallet);
+    for (const element of response.rows) {
+      holdingsAmount += element.shares * element.price;
+    }
+    res.json({ wallet: wallet - holdingsAmount, holdingsAmount });
   } catch (err) {
     console.error(
       'error from server- get wallet and holdings amount',
       err.message
     );
     res.status(500).json({
-      errorMessage: 'Something went wrong on the server. Please try again.'
+      errorMessage: 'Something went wrong on the server. Please try again.',
     });
   }
 });
