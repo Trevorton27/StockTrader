@@ -4,7 +4,6 @@ import { Card, Button, Row, Col, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { GiReceiveMoney } from 'react-icons/gi';
 import { AiOutlineDatabase } from 'react-icons/ai';
-import { BiBookReader } from 'react-icons/bi';
 
 const WelcomePage = () => {
   const [userName, setUserName] = useContext(UserNameContext);
@@ -13,7 +12,11 @@ const WelcomePage = () => {
     <div id='home'>
       <div className='home-content m-0 text-justify w-100'>
         <h1 className='text-center'>
+<<<<<<< HEAD
           Hi {userName}, and welcome to Stock Trader.
+=======
+          Hello {userName}, and welcome to Stock Trader.
+>>>>>>> f096357124aa6d6c4928a9b7da037c79381713a7
         </h1>
         <Container>
           <Row>
@@ -27,7 +30,11 @@ const WelcomePage = () => {
                   <Card.Text>
                     Buy stocks by searching for a specific symbol, or view our
                     recommended stocks. You are initially given a total of
+<<<<<<< HEAD
                     100,000 dollars.
+=======
+                    100,000 dollars. No, it's not real money unfortunately :-)
+>>>>>>> f096357124aa6d6c4928a9b7da037c79381713a7
                   </Card.Text>
                   <Link to='/main'>
                     <Button variant='primary' size='lg'>
@@ -49,7 +56,11 @@ const WelcomePage = () => {
                     With this information you can make informed decisions on
                     what stocks to buy and sell.
                   </Card.Text>
+<<<<<<< HEAD
                   <Link to='/portfolio' className='text-center'>
+=======
+                  <Link to='/portfolio'>
+>>>>>>> f096357124aa6d6c4928a9b7da037c79381713a7
                     <Button variant='primary' size='lg'>
                       View Portfolio
                     </Button>

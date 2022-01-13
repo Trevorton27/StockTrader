@@ -114,13 +114,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_trade_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_style_trade_css__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ "./node_modules/bootstrap/dist/css/bootstrap.min.css");
 /* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _components_Navigation__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/Navigation */ "./src/components/Navigation.js");
+!(function webpackMissingModule() { var e = new Error("Cannot find module './components/Navigation'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
 /* harmony import */ var _screens_HomeScreen__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./screens/HomeScreen */ "./src/screens/HomeScreen.js");
 /* harmony import */ var _screens_TradeScreen__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./screens/TradeScreen */ "./src/screens/TradeScreen.js");
+<<<<<<< HEAD
 /* harmony import */ var _screens_PortfolioScreen__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./screens/PortfolioScreen */ "./src/screens/PortfolioScreen.js");
 /* harmony import */ var _protected_routes_ProtectedRoute__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./protected-routes/ProtectedRoute */ "./src/protected-routes/ProtectedRoute.js");
 /* harmony import */ var _context_UserNameContext__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./context/UserNameContext */ "./src/context/UserNameContext.js");
 var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\App.js";
+=======
+/* harmony import */ var _screens_BeginnersScreen__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./screens/BeginnersScreen */ "./src/screens/BeginnersScreen.js");
+/* harmony import */ var _screens_PortfolioScreen__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./screens/PortfolioScreen */ "./src/screens/PortfolioScreen.js");
+/* harmony import */ var _protected_routes_ProtectedRoute__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./protected-routes/ProtectedRoute */ "./src/protected-routes/ProtectedRoute.js");
+/* harmony import */ var _context_UserNameContext__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./context/UserNameContext */ "./src/context/UserNameContext.js");
+var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\StockTraderClientTransfer\\StockTrader\\client\\src\\App.js";
+>>>>>>> f096357124aa6d6c4928a9b7da037c79381713a7
 
 
 
@@ -160,7 +168,7 @@ const App = () => {
       lineNumber: 20,
       columnNumber: 9
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Navigation__WEBPACK_IMPORTED_MODULE_8__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(!(function webpackMissingModule() { var e = new Error("Cannot find module './components/Navigation'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()), {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
@@ -210,6 +218,7 @@ const App = () => {
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "./src/components/AddHolding.js":
 /*!**************************************!*\
   !*** ./src/components/AddHolding.js ***!
@@ -2790,6 +2799,8 @@ const SellModal = props => {
 
 /***/ }),
 
+=======
+>>>>>>> f096357124aa6d6c4928a9b7da037c79381713a7
 /***/ "./src/context/UserNameContext.js":
 /*!****************************************!*\
   !*** ./src/context/UserNameContext.js ***!
@@ -2803,7 +2814,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UserNameProvider", function() { return UserNameProvider; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\context\\UserNameContext.js";
+var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\StockTraderClientTransfer\\StockTrader\\client\\src\\context\\UserNameContext.js";
 
 const UserNameContext = Object(react__WEBPACK_IMPORTED_MODULE_0__["createContext"])();
 const UserNameProvider = props => {
@@ -2826,6 +2837,7 @@ const UserNameProvider = props => {
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "./src/http-helpers/portfolioUtilities.js":
 /*!************************************************!*\
   !*** ./src/http-helpers/portfolioUtilities.js ***!
@@ -2850,6 +2862,8 @@ const getWalletData = async () => {
 
 /***/ }),
 
+=======
+>>>>>>> f096357124aa6d6c4928a9b7da037c79381713a7
 /***/ "./src/http-helpers/tradeUtilities.js":
 /*!********************************************!*\
   !*** ./src/http-helpers/tradeUtilities.js ***!
@@ -2934,7 +2948,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./App */ "./src/App.js");
 /* harmony import */ var _reportWebVitals__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./reportWebVitals */ "./src/reportWebVitals.js");
-var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\index.js";
+var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\StockTraderClientTransfer\\StockTrader\\client\\src\\index.js";
 
 
 
@@ -2970,7 +2984,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\protected-routes\\ProtectedRoute.js";
+var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\StockTraderClientTransfer\\StockTrader\\client\\src\\protected-routes\\ProtectedRoute.js";
 
 
 
@@ -3052,6 +3066,75 @@ const reportWebVitals = onPerfEntry => {
 
 /***/ }),
 
+<<<<<<< HEAD
+=======
+/***/ "./src/screens/BeginnersScreen.js":
+/*!****************************************!*\
+  !*** ./src/screens/BeginnersScreen.js ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/headers/HeaderInstructions'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/MostActiveStocks'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/BeginnersHero'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/BeginnersInfo'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\StockTraderClientTransfer\\StockTrader\\client\\src\\screens\\BeginnersScreen.js";
+
+
+
+
+
+
+const BeginnersScreen = () => {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "instructions-screen",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9,
+      columnNumber: 5
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/headers/HeaderInstructions'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()), {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10,
+      columnNumber: 7
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/BeginnersHero'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()), {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11,
+      columnNumber: 7
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/BeginnersInfo'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()), {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12,
+      columnNumber: 7
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/MostActiveStocks'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()), {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13,
+      columnNumber: 7
+    }
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (BeginnersScreen);
+
+/***/ }),
+
+>>>>>>> f096357124aa6d6c4928a9b7da037c79381713a7
 /***/ "./src/screens/HomeScreen.js":
 /*!***********************************!*\
   !*** ./src/screens/HomeScreen.js ***!
@@ -3063,10 +3146,10 @@ const reportWebVitals = onPerfEntry => {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_Register__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Register */ "./src/components/Register.js");
-/* harmony import */ var _components_Login__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Login */ "./src/components/Login.js");
-/* harmony import */ var _components_WelcomePage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/WelcomePage */ "./src/components/WelcomePage.js");
-var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\screens\\HomeScreen.js";
+!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/Register'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/Login'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/WelcomePage'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\StockTraderClientTransfer\\StockTrader\\client\\src\\screens\\HomeScreen.js";
 
 
 
@@ -3135,6 +3218,7 @@ const HomeScreen = () => {
         lineNumber: 23,
         columnNumber: 13
       }
+<<<<<<< HEAD
     }, "Once you have registered, you will be automatically logged in."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       className: "home-buttons-wrapper",
       __self: undefined,
@@ -3144,13 +3228,16 @@ const HomeScreen = () => {
         columnNumber: 13
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Register__WEBPACK_IMPORTED_MODULE_1__["default"], {
+=======
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/Register'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()), {
+>>>>>>> f096357124aa6d6c4928a9b7da037c79381713a7
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 27,
         columnNumber: 15
       }
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Login__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/Login'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()), {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
@@ -3159,7 +3246,7 @@ const HomeScreen = () => {
       }
     })))));
   } else {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_WelcomePage__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/WelcomePage'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()), {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
@@ -3185,13 +3272,13 @@ const HomeScreen = () => {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_UserInfo__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/UserInfo */ "./src/components/UserInfo.js");
-/* harmony import */ var _components_CurrentHoldings__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/CurrentHoldings */ "./src/components/CurrentHoldings.js");
-/* harmony import */ var _components_NoCurrentHoldings__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/NoCurrentHoldings */ "./src/components/NoCurrentHoldings.js");
-/* harmony import */ var _components_headers_HeaderPortfolio__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/headers/HeaderPortfolio */ "./src/components/headers/HeaderPortfolio.js");
-/* harmony import */ var _components_charts_Chart__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/charts/Chart */ "./src/components/charts/Chart.js");
-/* harmony import */ var _http_helpers_tradeUtilities__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../http-helpers/tradeUtilities */ "./src/http-helpers/tradeUtilities.js");
-var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\screens\\PortfolioScreen.js";
+!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/UserInfo'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/CurrentHoldings'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/NoCurrentHoldings'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/headers/HeaderPortfolio'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/charts/Chart'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+/* harmony import */ var _http_helpers_tradeUtilities__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../http-helpers/tradeUtilities */ "./src/http-helpers/tradeUtilities.js");
+var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\StockTraderClientTransfer\\StockTrader\\client\\src\\screens\\PortfolioScreen.js";
 
 
 
@@ -3204,7 +3291,7 @@ const PortfolioScreen = () => {
   const [holdings, setHoldings] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     const fetchHoldingsData = () => {
-      Object(_http_helpers_tradeUtilities__WEBPACK_IMPORTED_MODULE_6__["getHoldings"])().then(holdingsData => {
+      Object(_http_helpers_tradeUtilities__WEBPACK_IMPORTED_MODULE_2__["getHoldings"])().then(holdingsData => {
         setHoldings(holdingsData);
       }).catch(err => console.error('error get holdings', err));
     };
@@ -3219,7 +3306,7 @@ const PortfolioScreen = () => {
       lineNumber: 24,
       columnNumber: 5
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_headers_HeaderPortfolio__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/headers/HeaderPortfolio'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()), {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
@@ -3234,14 +3321,14 @@ const PortfolioScreen = () => {
       lineNumber: 26,
       columnNumber: 7
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_UserInfo__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/UserInfo'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()), {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 27,
       columnNumber: 9
     }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_charts_Chart__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/charts/Chart'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()), {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
@@ -3256,7 +3343,7 @@ const PortfolioScreen = () => {
       lineNumber: 30,
       columnNumber: 7
     }
-  }, holdings.length > 0 ? holdings.map(holding => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_CurrentHoldings__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, holdings.length > 0 ? holdings.map(holding => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/CurrentHoldings'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()), {
     holding: holding,
     key: holding.holding_id,
     __self: undefined,
@@ -3265,7 +3352,7 @@ const PortfolioScreen = () => {
       lineNumber: 33,
       columnNumber: 13
     }
-  })) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_NoCurrentHoldings__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  })) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/NoCurrentHoldings'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()), {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
@@ -3293,13 +3380,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var qs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! qs */ "./node_modules/qs/lib/index.js");
 /* harmony import */ var qs__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(qs__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _http_helpers_tradeUtilities__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../http-helpers/tradeUtilities */ "./src/http-helpers/tradeUtilities.js");
-/* harmony import */ var _components_Recommendations__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Recommendations */ "./src/components/Recommendations.js");
-/* harmony import */ var _components_SelectedHolding__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/SelectedHolding */ "./src/components/SelectedHolding.js");
-/* harmony import */ var _components_headers_HeaderTrade__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/headers/HeaderTrade */ "./src/components/headers/HeaderTrade.js");
-/* harmony import */ var _components_AddHolding__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/AddHolding */ "./src/components/AddHolding.js");
-/* harmony import */ var _components_ShowAlert__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/ShowAlert */ "./src/components/ShowAlert.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\screens\\TradeScreen.js";
+!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/Recommendations'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/SelectedHolding'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/headers/HeaderTrade'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/AddHolding'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/ShowAlert'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\StockTraderClientTransfer\\StockTrader\\client\\src\\screens\\TradeScreen.js";
 
 
 
@@ -3370,7 +3457,7 @@ const TradeScreen = props => {
       lineNumber: 73,
       columnNumber: 5
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_headers_HeaderTrade__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/headers/HeaderTrade'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()), {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
@@ -3385,7 +3472,7 @@ const TradeScreen = props => {
       lineNumber: 75,
       columnNumber: 7
     }
-  }, isShowAlert && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_ShowAlert__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  }, isShowAlert && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/ShowAlert'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()), {
     toggleAlertState: toggleAlertState,
     isShowAlert: isShowAlert,
     selectedHolding: selectedHolding,
@@ -3397,7 +3484,7 @@ const TradeScreen = props => {
       lineNumber: 77,
       columnNumber: 11
     }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_AddHolding__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/AddHolding'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()), {
     handleSearchForHolding: handleSearchForHolding,
     __self: undefined,
     __source: {
@@ -3405,7 +3492,7 @@ const TradeScreen = props => {
       lineNumber: 85,
       columnNumber: 9
     }
-  }), selectedHolding ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_SelectedHolding__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }), selectedHolding ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/SelectedHolding'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()), {
     selectedHolding: selectedHolding,
     buyShares: buyShares,
     sellShares: sellShares,
@@ -3416,7 +3503,7 @@ const TradeScreen = props => {
       lineNumber: 87,
       columnNumber: 11
     }
-  }) : null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Recommendations__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }) : null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/Recommendations'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()), {
     handleSearchForHolding: handleSearchForHolding,
     __self: undefined,
     __source: {
@@ -3427,7 +3514,7 @@ const TradeScreen = props => {
   })));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(react_router_dom__WEBPACK_IMPORTED_MODULE_8__["withRouter"])(TradeScreen));
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["withRouter"])(TradeScreen));
 
 /***/ }),
 
@@ -3588,8 +3675,19 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\spira\OneDrive\Documents\PersonalProjects\StockTrader\StockTrader\client\src\index.js */"./src/index.js");
+module.exports = __webpack_require__(/*! C:\Users\spira\OneDrive\Documents\PersonalProjects\StockTraderClientTransfer\StockTrader\client\src\index.js */"./src/index.js");
 
+
+/***/ }),
+
+/***/ 1:
+/*!********************************!*\
+  !*** ./util.inspect (ignored) ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
 
 /***/ }),
 

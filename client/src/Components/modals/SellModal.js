@@ -27,7 +27,11 @@ const SellModal = (props) => {
   const { companyName, symbol, latestPrice } = props.selectedHolding;
   return (
     <Fragment>
+<<<<<<< HEAD
       <Button variant='secondary' onClick={handleShow} disabled={!props.shares}>
+=======
+      <Button variant='secondary' onClick={handleShow}>
+>>>>>>> f096357124aa6d6c4928a9b7da037c79381713a7
         Sell Stocks
       </Button>
 
