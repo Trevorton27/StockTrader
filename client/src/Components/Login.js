@@ -33,7 +33,12 @@ const Login = (props) => {
 
   return (
     <>
-      <Button size='lg' onClick={handleShow} className='btn btn-primary'>
+      <Button
+        size='lg'
+        onClick={handleShow}
+        className='btn '
+        style={{ backgroundColor: '#343a40', border: 'none' }}
+      >
         Login
       </Button>
       <Modal show={show} onHide={handleClose}>

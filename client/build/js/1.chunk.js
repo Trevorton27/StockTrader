@@ -1,4 +1,4 @@
-(this["webpackJsonpstock-trading-app"] = this["webpackJsonpstock-trading-app"] || []).push([[1],{
+(this["webpackJsonpstock-trader"] = this["webpackJsonpstock-trader"] || []).push([[1],{
 
 /***/ "./node_modules/web-vitals/dist/web-vitals.es5.min.js":
 /*!************************************************************!*\

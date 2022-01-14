@@ -9,20 +9,12 @@ const Navigation = (props) => {
   const [userName, setUserName] = useContext(UserNameContext);
 
   const logOut = () => {
-<<<<<<< HEAD
     localStorage.removeItem('userData');
-=======
-    localStorage.removeItem('data');
->>>>>>> f096357124aa6d6c4928a9b7da037c79381713a7
     props.history.push('/');
   };
 
   return (
-<<<<<<< HEAD
     <Navbar bg='dark' variant='dark' id='navbar' expand='sm' sticky='top'>
-=======
-    <Navbar bg='dark' variant='dark' id='navbar' expand='sm'>
->>>>>>> f096357124aa6d6c4928a9b7da037c79381713a7
       <Navbar.Brand href='/'>
         Stock Trader <AiOutlineStock />
       </Navbar.Brand>
@@ -37,11 +29,7 @@ const Navigation = (props) => {
         {JSON.parse(localStorage.getItem('userData')) ? (
           <Nav>
             <Nav.Link className='d-flex'>
-<<<<<<< HEAD
               <CgProfile size='1.5em' className='mr-1' /> Welcome {userName}
-=======
-              <CgProfile size='1.5em' className='mr-1' /> {userName}
->>>>>>> f096357124aa6d6c4928a9b7da037c79381713a7
             </Nav.Link>
             <Nav.Link onClick={logOut}>Logout</Nav.Link>
           </Nav>

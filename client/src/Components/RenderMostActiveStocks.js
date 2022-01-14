@@ -6,6 +6,9 @@ const RenderMostActiveStocks = ({ mostActiveStock }) => {
   const [holdingStyleColor, setHoldingStyleColor] = useState('');
   const [positiveSign, setPositiveSign] = useState(false);
 
+  const { companyName, latestPrice, changePercent, change, symbol } =
+    mostActiveStock;
+
   useEffect(() => {
     const isHoldingNegativeOrPositive = () => {
       if (String(changePercent).charAt(0) === '-') {
@@ -18,26 +21,18 @@ const RenderMostActiveStocks = ({ mostActiveStock }) => {
     };
 
     isHoldingNegativeOrPositive();
-  }, []);
-
-  const {
-    companyName,
-    latestPrice,
-    changePercent,
-    change,
-    symbol,
-  } = mostActiveStock;
+  }, [changePercent]);
 
   return (
-    <div className="active-container card mt-3">
+    <div className='active-container card mt-3'>
       <Card style={{ width: '18rem' }}>
-        <Card.Body className="active-header p-0">
-          <Card.Title className="border-0 m-0 active-title text-center">
+        <Card.Body className='active-header p-0'>
+          <Card.Title className='border-0 m-0 active-title text-center'>
             {' '}
             {companyName}
           </Card.Title>
         </Card.Body>
-        <ListGroup className="list-group-flush">
+        <ListGroup className='list-group-flush'>
           <ListGroupItem>
             <strong>Symbol: </strong>
             {symbol}
@@ -62,14 +57,14 @@ const RenderMostActiveStocks = ({ mostActiveStock }) => {
             </span>
           </ListGroupItem>
         </ListGroup>
-        <Card.Body className="p-1 d-inline text-center">
+        <Card.Body className='p-1 d-inline text-center'>
           <Link
             to={{
               pathname: '/main',
-              search: `?symbol=${symbol}`,
+              search: `?symbol=${symbol}`
             }}
           >
-            <Button variant="outline-primary w-100" size="md">
+            <Button variant='outline-primary w-100' size='md'>
               Click to Trade {symbol}
             </Button>
           </Link>

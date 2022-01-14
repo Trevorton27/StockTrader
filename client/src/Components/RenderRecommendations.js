@@ -8,6 +8,9 @@ function RenderRecommendations(props) {
   const [holdingStyleColor, setHoldingStyleColor] = useState('');
   const [positiveSign, setPositiveSign] = useState(false);
 
+  const { companyName, latestPrice, changePercent, change, symbol } =
+    props.recommendedHolding;
+
   useEffect(() => {
     getHoldings()
       .then((holdingsData) => setHoldings(holdingsData))
@@ -24,7 +27,7 @@ function RenderRecommendations(props) {
     };
 
     isHoldingNegativeOrPositive();
-  }, []);
+  }, [changePercent]);
 
   useEffect(() => {
     const compareSelectedHoldingToExistingList = () => {
@@ -37,10 +40,7 @@ function RenderRecommendations(props) {
     };
 
     compareSelectedHoldingToExistingList();
-  }, [holdings]);
-
-  const { companyName, latestPrice, changePercent, change, symbol } =
-    props.recommendedHolding;
+  }, [holdings, props.recommendedHolding.symbol]);
 
   return (
     <div className='recommended-holding'>

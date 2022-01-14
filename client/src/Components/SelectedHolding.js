@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import BuyModal from './modals/BuyModal';
 import SellModal from './modals/SellModal';
 import { getHoldings } from '../http-helpers/tradeUtilities';
@@ -15,22 +15,22 @@ const SelectedHolding = ({
   const [holdingStyleColor, setHoldingStyleColor] = useState('');
   const [positiveSign, setPositiveSign] = useState(false);
 
-  useEffect(() => {
-    isHoldingNegativeOrPositive();
-    getHoldingsData();
-  }, []);
+  const {
+    companyName,
+    symbol,
+    latestPrice,
+    previousClose,
+    changePercent,
+    change
+  } = selectedHolding;
 
-  useEffect(() => {
-    compareSelectedHoldingToExisting();
-  }, [holdings]);
-
-  const getHoldingsData = () => {
+  const getHoldingsData = useCallback(() => {
     getHoldings()
       .then((holdingsData) => setHoldings(holdingsData))
       .catch((err) => console.error('error get holdings', err));
-  };
+  }, []);
 
-  const isHoldingNegativeOrPositive = () => {
+  const isHoldingNegativeOrPositive = useCallback(() => {
     if (String(changePercent).charAt(0) === '-') {
       setHoldingStyleColor('red');
       setPositiveSign(false);
@@ -38,11 +38,11 @@ const SelectedHolding = ({
       setHoldingStyleColor('green');
       setPositiveSign('+');
     }
-  };
+  }, [changePercent]);
 
   useEffect(() => {
     isHoldingNegativeOrPositive();
-  }, [selectedHolding]);
+  }, [selectedHolding, isHoldingNegativeOrPositive]);
 
   const handleBuyShares = (shares) => {
     updateShares(shares);
@@ -56,7 +56,7 @@ const SelectedHolding = ({
     setShares((prevState) => prevState - parseInt(shares));
   };
 
-  const compareSelectedHoldingToExisting = () => {
+  const compareSelectedHoldingToExisting = useCallback(() => {
     if (selectedHolding) {
       const holdingExist = holdings.find(
         (holding) => holding.symbol === selectedHolding.symbol
@@ -65,15 +65,16 @@ const SelectedHolding = ({
         setShares(holdingExist.shares);
       }
     }
-  };
-  const {
-    companyName,
-    symbol,
-    latestPrice,
-    previousClose,
-    changePercent,
-    change
-  } = selectedHolding;
+  }, [holdings, selectedHolding]);
+
+  useEffect(() => {
+    isHoldingNegativeOrPositive();
+    getHoldingsData();
+  }, [isHoldingNegativeOrPositive, getHoldingsData]);
+
+  useEffect(() => {
+    compareSelectedHoldingToExisting();
+  }, [holdings, compareSelectedHoldingToExisting]);
 
   return (
     <>

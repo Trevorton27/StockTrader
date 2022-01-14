@@ -1,15 +1,4 @@
-(this["webpackJsonpstock-trading-app"] = this["webpackJsonpstock-trading-app"] || []).push([["main"],{
-
-/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/style/beginners.css":
-/*!************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/style/beginners.css ***!
-  \************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-throw new Error("Module build failed (from ./node_modules/postcss-loader/src/index.js):\nError: ENOENT: no such file or directory, open 'C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\style\\beginners.css'");
-
-/***/ }),
+(this["webpackJsonpstock-trader"] = this["webpackJsonpstock-trader"] || []).push([["main"],{
 
 /***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/style/home.css":
 /*!*******************************************************************************************************************************!*\
@@ -28,7 +17,7 @@ exports.push([module.i, "@import url(https://fonts.googleapis.com/css2?family=Op
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap);"]);
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-exports.push([module.i, "#home {\r\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") no-repeat center center/cover;\r\n  height: 95vh;\r\n  position: relative;\r\n  padding: 40px;\r\n}\r\n\r\n#home::before {\r\n  content: '';\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  width: 100%;\r\n  height: 100%;\r\n  background: rgba(0, 0, 0, 0.6);\r\n}\r\n\r\n#home * {\r\n  z-index: 10;\r\n}\r\n\r\n.home-card {\r\n  height: 100%;\r\n}\r\n\r\n.home-content {\r\n  width: 80%;\r\n  margin: auto;\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: center;\r\n  padding: 0 20px;\r\n  font-size: 1.3rem;\r\n  color: #fff;\r\n  font-family: 'Open Sans', sans-serif;\r\n}\r\n\r\n.home-content p {\r\n  font-size: 1.5rem;\r\n  text-align: start;\r\n}\r\n\r\n#home h1 {\r\n  text-align: start;\r\n\r\n  color: #fff;\r\n}\r\n\r\n.home-buttons-wrapper .btn {\r\n  margin-right: 20px;\r\n  font-size: 1.2rem;\r\n  text-align: center;\r\n}\r\n\r\n.home-header {\r\n  font-family: 'Open Sans', sans-serif;\r\n  font-weight: 600;\r\n}\r\n\r\n#home .col-logo {\r\n  margin: auto;\r\n}\r\n\r\n.home-container {\r\n  display: grid;\r\n  grid-template-columns: 2fr 1fr;\r\n}\r\n\r\n.home-card .card-body a {\r\n  position: absolute;\r\n  bottom: 0;\r\n}\r\n", ""]);
+exports.push([module.i, "#home {\r\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") no-repeat center center/cover;\r\n  height: 95vh;\r\n  position: relative;\r\n  padding: 40px;\r\n}\r\n\r\n#home::before {\r\n  content: '';\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  width: 100%;\r\n  height: 100%;\r\n  background: rgba(0, 0, 0, 0.6);\r\n}\r\n\r\n#home * {\r\n  z-index: 10;\r\n}\r\n\r\n.home-card {\r\n  height: 100%;\r\n}\r\n\r\n.home-content {\r\n  width: 90%;\r\n  margin: auto;\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: center;\r\n  padding: 0 20px;\r\n  font-size: 1.3rem;\r\n  color: #fff;\r\n  font-family: 'Open Sans', sans-serif;\r\n}\r\n\r\n.home-content p {\r\n  font-size: 1.5rem;\r\n  text-align: start;\r\n}\r\n\r\n#home h1 {\r\n  text-align: start;\r\n\r\n  color: #fff;\r\n}\r\n\r\n.home-buttons-wrapper .btn {\r\n  margin-right: 20px;\r\n  font-size: 1.2rem;\r\n  text-align: center;\r\n}\r\n\r\n.home-header {\r\n  font-family: 'Open Sans', sans-serif;\r\n  font-weight: 600;\r\n}\r\n\r\n#home .col-logo {\r\n  margin: auto;\r\n}\r\n\r\n.home-container {\r\n  display: grid;\r\n  grid-template-columns: 2fr 1fr;\r\n}\r\n\r\n.home-card .card-body a {\r\n  position: absolute;\r\n  bottom: 0;\r\n}\r\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -108,28 +97,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_home_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_style_home_css__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _style_mobile_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./style/mobile.css */ "./src/style/mobile.css");
 /* harmony import */ var _style_mobile_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_style_mobile_css__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _style_beginners_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./style/beginners.css */ "./src/style/beginners.css");
-/* harmony import */ var _style_beginners_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_style_beginners_css__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _style_trade_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./style/trade.css */ "./src/style/trade.css");
-/* harmony import */ var _style_trade_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_style_trade_css__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ "./node_modules/bootstrap/dist/css/bootstrap.min.css");
-/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_7__);
-!(function webpackMissingModule() { var e = new Error("Cannot find module './components/Navigation'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
-/* harmony import */ var _screens_HomeScreen__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./screens/HomeScreen */ "./src/screens/HomeScreen.js");
-/* harmony import */ var _screens_TradeScreen__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./screens/TradeScreen */ "./src/screens/TradeScreen.js");
-<<<<<<< HEAD
-/* harmony import */ var _screens_PortfolioScreen__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./screens/PortfolioScreen */ "./src/screens/PortfolioScreen.js");
-/* harmony import */ var _protected_routes_ProtectedRoute__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./protected-routes/ProtectedRoute */ "./src/protected-routes/ProtectedRoute.js");
-/* harmony import */ var _context_UserNameContext__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./context/UserNameContext */ "./src/context/UserNameContext.js");
+/* harmony import */ var _style_trade_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./style/trade.css */ "./src/style/trade.css");
+/* harmony import */ var _style_trade_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_style_trade_css__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ "./node_modules/bootstrap/dist/css/bootstrap.min.css");
+/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _components_Navigation__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/Navigation */ "./src/components/Navigation.js");
+/* harmony import */ var _screens_HomeScreen__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./screens/HomeScreen */ "./src/screens/HomeScreen.js");
+/* harmony import */ var _screens_TradeScreen__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./screens/TradeScreen */ "./src/screens/TradeScreen.js");
+/* harmony import */ var _screens_PortfolioScreen__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./screens/PortfolioScreen */ "./src/screens/PortfolioScreen.js");
+/* harmony import */ var _protected_routes_ProtectedRoute__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./protected-routes/ProtectedRoute */ "./src/protected-routes/ProtectedRoute.js");
+/* harmony import */ var _context_UserNameContext__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./context/UserNameContext */ "./src/context/UserNameContext.js");
 var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\App.js";
-=======
-/* harmony import */ var _screens_BeginnersScreen__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./screens/BeginnersScreen */ "./src/screens/BeginnersScreen.js");
-/* harmony import */ var _screens_PortfolioScreen__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./screens/PortfolioScreen */ "./src/screens/PortfolioScreen.js");
-/* harmony import */ var _protected_routes_ProtectedRoute__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./protected-routes/ProtectedRoute */ "./src/protected-routes/ProtectedRoute.js");
-/* harmony import */ var _context_UserNameContext__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./context/UserNameContext */ "./src/context/UserNameContext.js");
-var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\StockTraderClientTransfer\\StockTrader\\client\\src\\App.js";
->>>>>>> f096357124aa6d6c4928a9b7da037c79381713a7
-
 
 
 
@@ -149,14 +127,14 @@ const App = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18,
+      lineNumber: 17,
       columnNumber: 5
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_context_UserNameContext__WEBPACK_IMPORTED_MODULE_13__["UserNameProvider"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_context_UserNameContext__WEBPACK_IMPORTED_MODULE_12__["UserNameProvider"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19,
+      lineNumber: 18,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -165,14 +143,14 @@ const App = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20,
+      lineNumber: 19,
       columnNumber: 9
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(!(function webpackMissingModule() { var e = new Error("Cannot find module './components/Navigation'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()), {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Navigation__WEBPACK_IMPORTED_MODULE_7__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21,
+      lineNumber: 20,
       columnNumber: 11
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("main", {
@@ -180,35 +158,35 @@ const App = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22,
+      lineNumber: 21,
       columnNumber: 11
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     path: "/",
     exact: true,
-    component: _screens_HomeScreen__WEBPACK_IMPORTED_MODULE_9__["default"],
+    component: _screens_HomeScreen__WEBPACK_IMPORTED_MODULE_8__["default"],
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22,
+      columnNumber: 13
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_protected_routes_ProtectedRoute__WEBPACK_IMPORTED_MODULE_11__["default"], {
+    path: "/main",
+    component: _screens_TradeScreen__WEBPACK_IMPORTED_MODULE_9__["default"],
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 23,
       columnNumber: 13
     }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_protected_routes_ProtectedRoute__WEBPACK_IMPORTED_MODULE_12__["default"], {
-    path: "/main",
-    component: _screens_TradeScreen__WEBPACK_IMPORTED_MODULE_10__["default"],
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_protected_routes_ProtectedRoute__WEBPACK_IMPORTED_MODULE_11__["default"], {
+    path: "/portfolio",
+    component: _screens_PortfolioScreen__WEBPACK_IMPORTED_MODULE_10__["default"],
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 24,
-      columnNumber: 13
-    }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_protected_routes_ProtectedRoute__WEBPACK_IMPORTED_MODULE_12__["default"], {
-    path: "/portfolio",
-    component: _screens_PortfolioScreen__WEBPACK_IMPORTED_MODULE_11__["default"],
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 25,
       columnNumber: 13
     }
   })))));
@@ -218,7 +196,6 @@ const App = () => {
 
 /***/ }),
 
-<<<<<<< HEAD
 /***/ "./src/components/AddHolding.js":
 /*!**************************************!*\
   !*** ./src/components/AddHolding.js ***!
@@ -261,19 +238,7 @@ const AddHolding = props => {
     setSymbol(e.target.value);
   };
 
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
-    if (timeoutRef.current !== null) {
-      clearTimeout(timeoutRef.current);
-    }
-
-    if (isCanSearch && symbol) performApiCall();
-    timeoutRef.current = setTimeout(() => {
-      timeoutRef.current = null;
-      setCanSearch(true);
-    }, 2000);
-  }, [isCanSearch]);
-
-  const performApiCall = async () => {
+  const performApiCall = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(async () => {
     try {
       const response = await Object(_http_helpers_tradeUtilities__WEBPACK_IMPORTED_MODULE_2__["searchForHolding"])(symbol);
 
@@ -286,8 +251,18 @@ const AddHolding = props => {
     } catch (err) {
       console.error(err.message);
     }
-  };
+  }, [symbol]);
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    if (timeoutRef.current !== null) {
+      clearTimeout(timeoutRef.current);
+    }
 
+    if (isCanSearch && symbol) performApiCall();
+    timeoutRef.current = setTimeout(() => {
+      timeoutRef.current = null;
+      setCanSearch(true);
+    }, 2000);
+  }, [isCanSearch, performApiCall, symbol]);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
     className: "form-inline justify-content-center mt-3 selected-holding",
     onSubmit: handleSubmit,
@@ -307,17 +282,21 @@ const AddHolding = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62,
+      lineNumber: 63,
       columnNumber: 9
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     type: "submit",
     className: "btn btn-primary col-sm-2",
+    style: {
+      backgroundColor: '#343a40',
+      border: 'none'
+    },
     disabled: !companyName,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70,
+      lineNumber: 71,
       columnNumber: 9
     }
   }, "Submit"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
@@ -328,7 +307,7 @@ const AddHolding = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76,
+      lineNumber: 79,
       columnNumber: 9
     }
   }, companyName)), isShowAlert && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap_Alert__WEBPACK_IMPORTED_MODULE_1__["default"], {
@@ -339,7 +318,7 @@ const AddHolding = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 85,
+      lineNumber: 89,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
@@ -347,7 +326,7 @@ const AddHolding = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 90,
+      lineNumber: 95,
       columnNumber: 11
     }
   }, symbol), " is not a valid symbol. Please try modifying your search."));
@@ -381,6 +360,14 @@ const CurrentHoldings = _ref => {
   } = _ref;
   const [holdingStyleColor, setHoldingStyleColor] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])('');
   const [positiveSign, setPositiveSign] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
+  const {
+    name,
+    symbol,
+    price,
+    percent_change,
+    shares,
+    created_at
+  } = holding;
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     const isHoldingNegativeOrPositive = () => {
       if (String(percent_change).charAt(0) === '-') {
@@ -393,21 +380,13 @@ const CurrentHoldings = _ref => {
     };
 
     isHoldingNegativeOrPositive();
-  }, []);
-  const {
-    name,
-    symbol,
-    price,
-    percent_change,
-    shares,
-    created_at
-  } = holding;
+  }, [percent_change]);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "selected-holding card mt-4",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25,
+      lineNumber: 24,
       columnNumber: 5
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -415,14 +394,14 @@ const CurrentHoldings = _ref => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26,
+      lineNumber: 25,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27,
+      lineNumber: 26,
       columnNumber: 9
     }
   }, name, ": ", symbol), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -430,7 +409,7 @@ const CurrentHoldings = _ref => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30,
+      lineNumber: 29,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
@@ -441,7 +420,7 @@ const CurrentHoldings = _ref => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31,
+      lineNumber: 30,
       columnNumber: 11
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Button"], {
@@ -450,7 +429,7 @@ const CurrentHoldings = _ref => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32,
+      lineNumber: 31,
       columnNumber: 13
     }
   }, "Trade")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
@@ -458,14 +437,14 @@ const CurrentHoldings = _ref => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38,
+      lineNumber: 37,
       columnNumber: 7
     }
   }, "Date purchased: ", created_at), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39,
+      lineNumber: 38,
       columnNumber: 7
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -473,7 +452,7 @@ const CurrentHoldings = _ref => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40,
+      lineNumber: 39,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -481,14 +460,14 @@ const CurrentHoldings = _ref => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41,
+      lineNumber: 40,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42,
+      lineNumber: 41,
       columnNumber: 11
     }
   }, "Shares Total Value:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -496,7 +475,7 @@ const CurrentHoldings = _ref => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43,
+      lineNumber: 42,
       columnNumber: 11
     }
   }, "$", Number(price * shares).toFixed(2))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -504,21 +483,21 @@ const CurrentHoldings = _ref => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47,
+      lineNumber: 46,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48,
+      lineNumber: 47,
       columnNumber: 11
     }
   }, "Number Of Shares:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49,
+      lineNumber: 48,
       columnNumber: 11
     }
   }, shares)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -526,14 +505,14 @@ const CurrentHoldings = _ref => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51,
+      lineNumber: 50,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52,
+      lineNumber: 51,
       columnNumber: 11
     }
   }, "Current Stock Value:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -541,7 +520,7 @@ const CurrentHoldings = _ref => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53,
+      lineNumber: 52,
       columnNumber: 11
     }
   }, "$", price)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -549,14 +528,14 @@ const CurrentHoldings = _ref => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55,
+      lineNumber: 54,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56,
+      lineNumber: 55,
       columnNumber: 11
     }
   }, "Percent Change:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -564,7 +543,7 @@ const CurrentHoldings = _ref => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57,
+      lineNumber: 56,
       columnNumber: 11
     }
   }, positiveSign, percent_change, "%"))));
@@ -628,7 +607,11 @@ const Login = props => {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Button"], {
     size: "lg",
     onClick: handleShow,
-    className: "btn btn-primary",
+    className: "btn ",
+    style: {
+      backgroundColor: '#343a40',
+      border: 'none'
+    },
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
@@ -641,7 +624,7 @@ const Login = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39,
+      lineNumber: 44,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Modal"].Header, {
@@ -649,14 +632,14 @@ const Login = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40,
+      lineNumber: 45,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Modal"].Title, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41,
+      lineNumber: 46,
       columnNumber: 11
     }
   }, "Login Form")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Form"], {
@@ -664,7 +647,7 @@ const Login = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43,
+      lineNumber: 48,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Form"].Group, {
@@ -672,14 +655,14 @@ const Login = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44,
+      lineNumber: 49,
       columnNumber: 11
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Form"].Label, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45,
+      lineNumber: 50,
       columnNumber: 13
     }
   }, "Email address"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Form"].Control, {
@@ -690,7 +673,7 @@ const Login = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46,
+      lineNumber: 51,
       columnNumber: 13
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Form"].Group, {
@@ -698,14 +681,14 @@ const Login = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53,
+      lineNumber: 58,
       columnNumber: 11
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Form"].Label, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54,
+      lineNumber: 59,
       columnNumber: 13
     }
   }, "Password"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Form"].Control, {
@@ -716,7 +699,7 @@ const Login = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55,
+      lineNumber: 60,
       columnNumber: 13
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Button"], {
@@ -725,7 +708,7 @@ const Login = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62,
+      lineNumber: 67,
       columnNumber: 11
     }
   }, "Submit"))));
@@ -931,7 +914,10 @@ const NoCurrentHoldings = () => {
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Button"], {
-    variant: "primary",
+    style: {
+      backgroundColor: '#343a40',
+      border: 'none'
+    },
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
@@ -1081,7 +1067,11 @@ const Register = props => {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Button"], {
     size: "lg",
     onClick: handleShow,
-    className: "btn btn-warning",
+    className: "btn ",
+    style: {
+      backgroundColor: '#343a40',
+      border: 'none'
+    },
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
@@ -1094,7 +1084,7 @@ const Register = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42,
+      lineNumber: 47,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Modal"].Header, {
@@ -1102,14 +1092,14 @@ const Register = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43,
+      lineNumber: 48,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Modal"].Title, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44,
+      lineNumber: 49,
       columnNumber: 11
     }
   }, "Registration Form")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Form"], {
@@ -1117,7 +1107,7 @@ const Register = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46,
+      lineNumber: 51,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Form"].Group, {
@@ -1125,14 +1115,14 @@ const Register = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47,
+      lineNumber: 52,
       columnNumber: 11
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Form"].Label, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48,
+      lineNumber: 53,
       columnNumber: 13
     }
   }, "Username"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Form"].Control, {
@@ -1143,7 +1133,7 @@ const Register = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49,
+      lineNumber: 54,
       columnNumber: 13
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Form"].Group, {
@@ -1151,14 +1141,14 @@ const Register = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56,
+      lineNumber: 61,
       columnNumber: 11
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Form"].Label, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57,
+      lineNumber: 62,
       columnNumber: 13
     }
   }, "Email address"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Form"].Control, {
@@ -1169,7 +1159,7 @@ const Register = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58,
+      lineNumber: 63,
       columnNumber: 13
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Form"].Text, {
@@ -1177,7 +1167,7 @@ const Register = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64,
+      lineNumber: 69,
       columnNumber: 13
     }
   }, "We'll never share your email with anyone else.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Form"].Group, {
@@ -1185,14 +1175,14 @@ const Register = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68,
+      lineNumber: 73,
       columnNumber: 11
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Form"].Label, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69,
+      lineNumber: 74,
       columnNumber: 13
     }
   }, "Password"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Form"].Control, {
@@ -1203,7 +1193,7 @@ const Register = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70,
+      lineNumber: 75,
       columnNumber: 13
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Button"], {
@@ -1213,7 +1203,7 @@ const Register = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77,
+      lineNumber: 82,
       columnNumber: 11
     }
   }, "Submit"))));
@@ -1246,6 +1236,13 @@ function RenderRecommendations(props) {
   const [holdings, setHoldings] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
   const [holdingStyleColor, setHoldingStyleColor] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])('');
   const [positiveSign, setPositiveSign] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
+  const {
+    companyName,
+    latestPrice,
+    changePercent,
+    change,
+    symbol
+  } = props.recommendedHolding;
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     Object(_http_helpers_tradeUtilities__WEBPACK_IMPORTED_MODULE_1__["getHoldings"])().then(holdingsData => setHoldings(holdingsData)).catch(err => console.error('error get holdings', err));
 
@@ -1260,10 +1257,10 @@ function RenderRecommendations(props) {
     };
 
     isHoldingNegativeOrPositive();
-  }, []);
+  }, [changePercent]);
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     const compareSelectedHoldingToExistingList = () => {
-      const holdingExist = holdings.find(holding => holding.symbol == props.recommendedHolding.symbol);
+      const holdingExist = holdings.find(holding => holding.symbol === props.recommendedHolding.symbol);
 
       if (holdingExist) {
         setShares(holdingExist.shares);
@@ -1271,20 +1268,13 @@ function RenderRecommendations(props) {
     };
 
     compareSelectedHoldingToExistingList();
-  }, [holdings]);
-  const {
-    companyName,
-    latestPrice,
-    changePercent,
-    change,
-    symbol
-  } = props.recommendedHolding;
+  }, [holdings, props.recommendedHolding.symbol]);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "recommended-holding",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51,
+      lineNumber: 46,
       columnNumber: 5
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1292,7 +1282,7 @@ function RenderRecommendations(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52,
+      lineNumber: 47,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1300,31 +1290,31 @@ function RenderRecommendations(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53,
+      lineNumber: 48,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54,
+      lineNumber: 49,
       columnNumber: 11
     }
-  }, ' ', companyName, ": ", symbol), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Button"], {
+  }, ' ', companyName, ": Stock Symbol ", symbol), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Button"], {
     href: "#goup",
     variant: "outline-primary",
     onClick: () => props.handleTrade(symbol),
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58,
+      lineNumber: 53,
       columnNumber: 11
     }
   }, "Trade"), ' '), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66,
+      lineNumber: 61,
       columnNumber: 9
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1332,7 +1322,7 @@ function RenderRecommendations(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67,
+      lineNumber: 62,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1340,14 +1330,14 @@ function RenderRecommendations(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68,
+      lineNumber: 63,
       columnNumber: 11
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69,
+      lineNumber: 64,
       columnNumber: 13
     }
   }, "Current Price"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -1355,7 +1345,7 @@ function RenderRecommendations(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70,
+      lineNumber: 65,
       columnNumber: 13
     }
   }, "$", latestPrice.toFixed(2))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1363,14 +1353,14 @@ function RenderRecommendations(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72,
+      lineNumber: 67,
       columnNumber: 11
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73,
+      lineNumber: 68,
       columnNumber: 13
     }
   }, "Percent Change"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -1378,7 +1368,7 @@ function RenderRecommendations(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74,
+      lineNumber: 69,
       columnNumber: 13
     }
   }, positiveSign, changePercent.toFixed(3), "%")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1386,14 +1376,14 @@ function RenderRecommendations(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 79,
+      lineNumber: 74,
       columnNumber: 11
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80,
+      lineNumber: 75,
       columnNumber: 13
     }
   }, "Daily Gain/Loss"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -1401,7 +1391,7 @@ function RenderRecommendations(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 81,
+      lineNumber: 76,
       columnNumber: 13
     }
   }, positiveSign, "$", change)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1409,21 +1399,21 @@ function RenderRecommendations(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 85,
+      lineNumber: 80,
       columnNumber: 11
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 86,
+      lineNumber: 81,
       columnNumber: 13
     }
   }, "Shares Held"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 87,
+      lineNumber: 82,
       columnNumber: 13
     }
   }, shares)))));
@@ -1466,19 +1456,18 @@ const SelectedHolding = _ref => {
   const [holdings, setHoldings] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
   const [holdingStyleColor, setHoldingStyleColor] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])('');
   const [positiveSign, setPositiveSign] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
-    isHoldingNegativeOrPositive();
-    getHoldingsData();
-  }, []);
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
-    compareSelectedHoldingToExisting();
-  }, [holdings]);
-
-  const getHoldingsData = () => {
+  const {
+    companyName,
+    symbol,
+    latestPrice,
+    previousClose,
+    changePercent,
+    change
+  } = selectedHolding;
+  const getHoldingsData = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(() => {
     Object(_http_helpers_tradeUtilities__WEBPACK_IMPORTED_MODULE_3__["getHoldings"])().then(holdingsData => setHoldings(holdingsData)).catch(err => console.error('error get holdings', err));
-  };
-
-  const isHoldingNegativeOrPositive = () => {
+  }, []);
+  const isHoldingNegativeOrPositive = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(() => {
     if (String(changePercent).charAt(0) === '-') {
       setHoldingStyleColor('red');
       setPositiveSign(false);
@@ -1486,11 +1475,10 @@ const SelectedHolding = _ref => {
       setHoldingStyleColor('green');
       setPositiveSign('+');
     }
-  };
-
+  }, [changePercent]);
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     isHoldingNegativeOrPositive();
-  }, [selectedHolding]);
+  }, [selectedHolding, isHoldingNegativeOrPositive]);
 
   const handleBuyShares = shares => {
     updateShares(shares);
@@ -1504,30 +1492,28 @@ const SelectedHolding = _ref => {
     setShares(prevState => prevState - parseInt(shares));
   };
 
-  const compareSelectedHoldingToExisting = () => {
+  const compareSelectedHoldingToExisting = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(() => {
     if (selectedHolding) {
-      const holdingExist = holdings.find(holding => holding.symbol == selectedHolding.symbol);
+      const holdingExist = holdings.find(holding => holding.symbol === selectedHolding.symbol);
 
       if (holdingExist) {
         setShares(holdingExist.shares);
       }
     }
-  };
-
-  const {
-    companyName,
-    symbol,
-    latestPrice,
-    previousClose,
-    changePercent,
-    change
-  } = selectedHolding;
+  }, [holdings, selectedHolding]);
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    isHoldingNegativeOrPositive();
+    getHoldingsData();
+  }, [isHoldingNegativeOrPositive, getHoldingsData]);
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    compareSelectedHoldingToExisting();
+  }, [holdings, compareSelectedHoldingToExisting]);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "selected-holding card mt-4",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80,
+      lineNumber: 81,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1535,14 +1521,14 @@ const SelectedHolding = _ref => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 81,
+      lineNumber: 82,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82,
+      lineNumber: 83,
       columnNumber: 11
     }
   }, ' ', companyName, ": ", symbol), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1550,7 +1536,7 @@ const SelectedHolding = _ref => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 86,
+      lineNumber: 87,
       columnNumber: 11
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_modals_BuyModal__WEBPACK_IMPORTED_MODULE_1__["default"], {
@@ -1560,7 +1546,7 @@ const SelectedHolding = _ref => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 87,
+      lineNumber: 88,
       columnNumber: 13
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_modals_SellModal__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -1570,14 +1556,14 @@ const SelectedHolding = _ref => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 92,
+      lineNumber: 93,
       columnNumber: 13
     }
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 99,
+      lineNumber: 100,
       columnNumber: 9
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1585,7 +1571,7 @@ const SelectedHolding = _ref => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 100,
+      lineNumber: 101,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1593,14 +1579,14 @@ const SelectedHolding = _ref => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 101,
+      lineNumber: 102,
       columnNumber: 11
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 102,
+      lineNumber: 103,
       columnNumber: 13
     }
   }, "Current Price"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -1608,7 +1594,7 @@ const SelectedHolding = _ref => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 103,
+      lineNumber: 104,
       columnNumber: 13
     }
   }, "$", latestPrice.toFixed(2)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
@@ -1616,7 +1602,7 @@ const SelectedHolding = _ref => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 106,
+      lineNumber: 107,
       columnNumber: 13
     }
   }, "Previous Closed: $", previousClose.toFixed(2), ' ')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1624,14 +1610,14 @@ const SelectedHolding = _ref => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 110,
+      lineNumber: 111,
       columnNumber: 11
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 111,
+      lineNumber: 112,
       columnNumber: 13
     }
   }, "Percent Change"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -1639,7 +1625,7 @@ const SelectedHolding = _ref => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 112,
+      lineNumber: 113,
       columnNumber: 13
     }
   }, positiveSign, changePercent.toFixed(3), "%")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1647,14 +1633,14 @@ const SelectedHolding = _ref => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 117,
+      lineNumber: 118,
       columnNumber: 11
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 118,
+      lineNumber: 119,
       columnNumber: 13
     }
   }, "Daily Gain/Loss"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -1662,7 +1648,7 @@ const SelectedHolding = _ref => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 119,
+      lineNumber: 120,
       columnNumber: 13
     }
   }, positiveSign, "$", change)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1670,21 +1656,21 @@ const SelectedHolding = _ref => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 123,
+      lineNumber: 124,
       columnNumber: 11
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 124,
+      lineNumber: 125,
       columnNumber: 13
     }
   }, "Shares Held"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 125,
+      lineNumber: 126,
       columnNumber: 13
     }
   }, shares)))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_charts_ChartTrade__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -1692,7 +1678,7 @@ const SelectedHolding = _ref => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 129,
+      lineNumber: 130,
       columnNumber: 7
     }
   }));
@@ -1890,9 +1876,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var react_icons_gi__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-icons/gi */ "../node_modules/react-icons/gi/index.esm.js");
 /* harmony import */ var react_icons_ai__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-icons/ai */ "../node_modules/react-icons/ai/index.esm.js");
-/* harmony import */ var react_icons_bi__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-icons/bi */ "../node_modules/react-icons/bi/index.esm.js");
 var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\components\\WelcomePage.js";
-
 
 
 
@@ -1907,7 +1891,7 @@ const WelcomePage = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13,
+      lineNumber: 12,
       columnNumber: 5
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1915,7 +1899,7 @@ const WelcomePage = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
+      lineNumber: 13,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
@@ -1923,21 +1907,21 @@ const WelcomePage = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15,
+      lineNumber: 14,
       columnNumber: 9
     }
   }, "Hi ", userName, ", and welcome to Stock Trader."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Container"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18,
+      lineNumber: 17,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Row"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19,
+      lineNumber: 18,
       columnNumber: 11
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Col"], {
@@ -1945,7 +1929,7 @@ const WelcomePage = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20,
+      lineNumber: 19,
       columnNumber: 13
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Card"], {
@@ -1954,7 +1938,7 @@ const WelcomePage = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21,
+      lineNumber: 20,
       columnNumber: 15
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_icons_gi__WEBPACK_IMPORTED_MODULE_4__["GiReceiveMoney"], {
@@ -1963,7 +1947,7 @@ const WelcomePage = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22,
+      lineNumber: 21,
       columnNumber: 17
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Card"].Body, {
@@ -1971,7 +1955,7 @@ const WelcomePage = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23,
+      lineNumber: 22,
       columnNumber: 17
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Card"].Title, {
@@ -1980,31 +1964,35 @@ const WelcomePage = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24,
+      lineNumber: 23,
       columnNumber: 19
     }
   }, "Trade"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Card"].Text, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27,
+      lineNumber: 26,
       columnNumber: 19
     }
   }, "Buy stocks by searching for a specific symbol, or view our recommended stocks. You are initially given a total of 100,000 dollars."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Link"], {
     to: "/main",
+    className: "text-center",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32,
+      lineNumber: 31,
       columnNumber: 19
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Button"], {
-    variant: "primary",
+    style: {
+      backgroundColor: '#343a40',
+      border: 'none'
+    },
     size: "lg",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33,
+      lineNumber: 32,
       columnNumber: 21
     }
   }, "Start Trading"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Col"], {
@@ -2012,7 +2000,7 @@ const WelcomePage = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40,
+      lineNumber: 42,
       columnNumber: 13
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Card"], {
@@ -2021,7 +2009,7 @@ const WelcomePage = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41,
+      lineNumber: 43,
       columnNumber: 15
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_icons_ai__WEBPACK_IMPORTED_MODULE_5__["AiOutlineDatabase"], {
@@ -2030,7 +2018,7 @@ const WelcomePage = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42,
+      lineNumber: 44,
       columnNumber: 17
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Card"].Body, {
@@ -2038,16 +2026,15 @@ const WelcomePage = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43,
+      lineNumber: 45,
       columnNumber: 17
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Card"].Title, {
     as: "h1",
-    className: "text-center",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44,
+      lineNumber: 46,
       columnNumber: 19
     }
   }, "Portfolio"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Card"].Text, {
@@ -2067,8 +2054,11 @@ const WelcomePage = () => {
       columnNumber: 19
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Button"], {
-    variant: "primary",
     size: "lg",
+    style: {
+      backgroundColor: '#343a40',
+      border: 'none'
+    },
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
@@ -2799,8 +2789,6 @@ const SellModal = props => {
 
 /***/ }),
 
-=======
->>>>>>> f096357124aa6d6c4928a9b7da037c79381713a7
 /***/ "./src/context/UserNameContext.js":
 /*!****************************************!*\
   !*** ./src/context/UserNameContext.js ***!
@@ -2814,7 +2802,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UserNameProvider", function() { return UserNameProvider; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\StockTraderClientTransfer\\StockTrader\\client\\src\\context\\UserNameContext.js";
+var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\context\\UserNameContext.js";
 
 const UserNameContext = Object(react__WEBPACK_IMPORTED_MODULE_0__["createContext"])();
 const UserNameProvider = props => {
@@ -2837,7 +2825,6 @@ const UserNameProvider = props => {
 
 /***/ }),
 
-<<<<<<< HEAD
 /***/ "./src/http-helpers/portfolioUtilities.js":
 /*!************************************************!*\
   !*** ./src/http-helpers/portfolioUtilities.js ***!
@@ -2862,8 +2849,6 @@ const getWalletData = async () => {
 
 /***/ }),
 
-=======
->>>>>>> f096357124aa6d6c4928a9b7da037c79381713a7
 /***/ "./src/http-helpers/tradeUtilities.js":
 /*!********************************************!*\
   !*** ./src/http-helpers/tradeUtilities.js ***!
@@ -2948,7 +2933,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./App */ "./src/App.js");
 /* harmony import */ var _reportWebVitals__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./reportWebVitals */ "./src/reportWebVitals.js");
-var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\StockTraderClientTransfer\\StockTrader\\client\\src\\index.js";
+var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\index.js";
 
 
 
@@ -2984,7 +2969,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\StockTraderClientTransfer\\StockTrader\\client\\src\\protected-routes\\ProtectedRoute.js";
+var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\protected-routes\\ProtectedRoute.js";
 
 
 
@@ -3066,75 +3051,6 @@ const reportWebVitals = onPerfEntry => {
 
 /***/ }),
 
-<<<<<<< HEAD
-=======
-/***/ "./src/screens/BeginnersScreen.js":
-/*!****************************************!*\
-  !*** ./src/screens/BeginnersScreen.js ***!
-  \****************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/headers/HeaderInstructions'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
-!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/MostActiveStocks'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
-!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/BeginnersHero'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
-!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/BeginnersInfo'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
-var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\StockTraderClientTransfer\\StockTrader\\client\\src\\screens\\BeginnersScreen.js";
-
-
-
-
-
-
-const BeginnersScreen = () => {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "instructions-screen",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9,
-      columnNumber: 5
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/headers/HeaderInstructions'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()), {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10,
-      columnNumber: 7
-    }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/BeginnersHero'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()), {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11,
-      columnNumber: 7
-    }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/BeginnersInfo'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()), {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12,
-      columnNumber: 7
-    }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/MostActiveStocks'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()), {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13,
-      columnNumber: 7
-    }
-  }));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (BeginnersScreen);
-
-/***/ }),
-
->>>>>>> f096357124aa6d6c4928a9b7da037c79381713a7
 /***/ "./src/screens/HomeScreen.js":
 /*!***********************************!*\
   !*** ./src/screens/HomeScreen.js ***!
@@ -3146,10 +3062,10 @@ const BeginnersScreen = () => {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/Register'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
-!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/Login'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
-!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/WelcomePage'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
-var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\StockTraderClientTransfer\\StockTrader\\client\\src\\screens\\HomeScreen.js";
+/* harmony import */ var _components_Register__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Register */ "./src/components/Register.js");
+/* harmony import */ var _components_Login__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Login */ "./src/components/Login.js");
+/* harmony import */ var _components_WelcomePage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/WelcomePage */ "./src/components/WelcomePage.js");
+var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\screens\\HomeScreen.js";
 
 
 
@@ -3159,26 +3075,19 @@ const HomeScreen = () => {
   if (!localStorage.getItem('userData')) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       id: "home",
+      className: "container-fluid",
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 9,
         columnNumber: 7
       }
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-      className: "text-center display-4 text-light",
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 10,
-        columnNumber: 9
-      }
-    }, "Welcome to Stock Trader"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       className: "home-container",
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 13,
+        lineNumber: 10,
         columnNumber: 9
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -3186,71 +3095,67 @@ const HomeScreen = () => {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 14,
+        lineNumber: 11,
         columnNumber: 11
       }
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
       className: "display-4 mb-5 home-header",
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 12,
+        columnNumber: 13
+      }
+    }, "Welcome to Stock Trader"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 15,
         columnNumber: 13
       }
-    }, "The best choices are based on experience."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 18,
-        columnNumber: 13
-      }
     }, "Experience the thrill of the stock market by utilizing fake money to purchase real stocks and buy or sell shares."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 22,
+        lineNumber: 19,
         columnNumber: 13
       }
     }, "Before you start, you must first register."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 23,
+        lineNumber: 20,
         columnNumber: 13
       }
-<<<<<<< HEAD
     }, "Once you have registered, you will be automatically logged in."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       className: "home-buttons-wrapper",
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 26,
+        lineNumber: 23,
         columnNumber: 13
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Register__WEBPACK_IMPORTED_MODULE_1__["default"], {
-=======
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/Register'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()), {
->>>>>>> f096357124aa6d6c4928a9b7da037c79381713a7
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 27,
+        lineNumber: 24,
         columnNumber: 15
       }
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/Login'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()), {
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Login__WEBPACK_IMPORTED_MODULE_2__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 28,
+        lineNumber: 25,
         columnNumber: 15
       }
     })))));
   } else {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/WelcomePage'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()), {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_WelcomePage__WEBPACK_IMPORTED_MODULE_3__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 35,
+        lineNumber: 32,
         columnNumber: 12
       }
     });
@@ -3272,13 +3177,13 @@ const HomeScreen = () => {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/UserInfo'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
-!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/CurrentHoldings'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
-!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/NoCurrentHoldings'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
-!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/headers/HeaderPortfolio'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
-!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/charts/Chart'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
-/* harmony import */ var _http_helpers_tradeUtilities__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../http-helpers/tradeUtilities */ "./src/http-helpers/tradeUtilities.js");
-var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\StockTraderClientTransfer\\StockTrader\\client\\src\\screens\\PortfolioScreen.js";
+/* harmony import */ var _components_UserInfo__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/UserInfo */ "./src/components/UserInfo.js");
+/* harmony import */ var _components_CurrentHoldings__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/CurrentHoldings */ "./src/components/CurrentHoldings.js");
+/* harmony import */ var _components_NoCurrentHoldings__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/NoCurrentHoldings */ "./src/components/NoCurrentHoldings.js");
+/* harmony import */ var _components_headers_HeaderPortfolio__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/headers/HeaderPortfolio */ "./src/components/headers/HeaderPortfolio.js");
+/* harmony import */ var _components_charts_Chart__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/charts/Chart */ "./src/components/charts/Chart.js");
+/* harmony import */ var _http_helpers_tradeUtilities__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../http-helpers/tradeUtilities */ "./src/http-helpers/tradeUtilities.js");
+var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\screens\\PortfolioScreen.js";
 
 
 
@@ -3291,7 +3196,7 @@ const PortfolioScreen = () => {
   const [holdings, setHoldings] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     const fetchHoldingsData = () => {
-      Object(_http_helpers_tradeUtilities__WEBPACK_IMPORTED_MODULE_2__["getHoldings"])().then(holdingsData => {
+      Object(_http_helpers_tradeUtilities__WEBPACK_IMPORTED_MODULE_6__["getHoldings"])().then(holdingsData => {
         setHoldings(holdingsData);
       }).catch(err => console.error('error get holdings', err));
     };
@@ -3306,7 +3211,7 @@ const PortfolioScreen = () => {
       lineNumber: 24,
       columnNumber: 5
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/headers/HeaderPortfolio'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()), {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_headers_HeaderPortfolio__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
@@ -3321,14 +3226,14 @@ const PortfolioScreen = () => {
       lineNumber: 26,
       columnNumber: 7
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/UserInfo'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()), {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_UserInfo__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 27,
       columnNumber: 9
     }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/charts/Chart'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()), {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_charts_Chart__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
@@ -3343,7 +3248,7 @@ const PortfolioScreen = () => {
       lineNumber: 30,
       columnNumber: 7
     }
-  }, holdings.length > 0 ? holdings.map(holding => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/CurrentHoldings'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()), {
+  }, holdings.length > 0 ? holdings.map(holding => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_CurrentHoldings__WEBPACK_IMPORTED_MODULE_2__["default"], {
     holding: holding,
     key: holding.holding_id,
     __self: undefined,
@@ -3352,7 +3257,7 @@ const PortfolioScreen = () => {
       lineNumber: 33,
       columnNumber: 13
     }
-  })) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/NoCurrentHoldings'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()), {
+  })) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_NoCurrentHoldings__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
@@ -3380,13 +3285,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var qs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! qs */ "./node_modules/qs/lib/index.js");
 /* harmony import */ var qs__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(qs__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _http_helpers_tradeUtilities__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../http-helpers/tradeUtilities */ "./src/http-helpers/tradeUtilities.js");
-!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/Recommendations'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
-!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/SelectedHolding'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
-!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/headers/HeaderTrade'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
-!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/AddHolding'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
-!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/ShowAlert'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\StockTraderClientTransfer\\StockTrader\\client\\src\\screens\\TradeScreen.js";
+/* harmony import */ var _components_Recommendations__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Recommendations */ "./src/components/Recommendations.js");
+/* harmony import */ var _components_SelectedHolding__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/SelectedHolding */ "./src/components/SelectedHolding.js");
+/* harmony import */ var _components_headers_HeaderTrade__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/headers/HeaderTrade */ "./src/components/headers/HeaderTrade.js");
+/* harmony import */ var _components_AddHolding__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/AddHolding */ "./src/components/AddHolding.js");
+/* harmony import */ var _components_ShowAlert__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/ShowAlert */ "./src/components/ShowAlert.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\screens\\TradeScreen.js";
 
 
 
@@ -3457,7 +3362,7 @@ const TradeScreen = props => {
       lineNumber: 73,
       columnNumber: 5
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/headers/HeaderTrade'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()), {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_headers_HeaderTrade__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
@@ -3472,7 +3377,7 @@ const TradeScreen = props => {
       lineNumber: 75,
       columnNumber: 7
     }
-  }, isShowAlert && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/ShowAlert'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()), {
+  }, isShowAlert && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_ShowAlert__WEBPACK_IMPORTED_MODULE_7__["default"], {
     toggleAlertState: toggleAlertState,
     isShowAlert: isShowAlert,
     selectedHolding: selectedHolding,
@@ -3484,7 +3389,7 @@ const TradeScreen = props => {
       lineNumber: 77,
       columnNumber: 11
     }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/AddHolding'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()), {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_AddHolding__WEBPACK_IMPORTED_MODULE_6__["default"], {
     handleSearchForHolding: handleSearchForHolding,
     __self: undefined,
     __source: {
@@ -3492,7 +3397,7 @@ const TradeScreen = props => {
       lineNumber: 85,
       columnNumber: 9
     }
-  }), selectedHolding ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/SelectedHolding'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()), {
+  }), selectedHolding ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_SelectedHolding__WEBPACK_IMPORTED_MODULE_4__["default"], {
     selectedHolding: selectedHolding,
     buyShares: buyShares,
     sellShares: sellShares,
@@ -3503,7 +3408,7 @@ const TradeScreen = props => {
       lineNumber: 87,
       columnNumber: 11
     }
-  }) : null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(!(function webpackMissingModule() { var e = new Error("Cannot find module '../components/Recommendations'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()), {
+  }) : null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Recommendations__WEBPACK_IMPORTED_MODULE_3__["default"], {
     handleSearchForHolding: handleSearchForHolding,
     __self: undefined,
     __source: {
@@ -3514,37 +3419,7 @@ const TradeScreen = props => {
   })));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["withRouter"])(TradeScreen));
-
-/***/ }),
-
-/***/ "./src/style/beginners.css":
-/*!*********************************!*\
-  !*** ./src/style/beginners.css ***!
-  \*********************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../node_modules/postcss-loader/src??postcss!./beginners.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/style/beginners.css");
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_router_dom__WEBPACK_IMPORTED_MODULE_8__["withRouter"])(TradeScreen));
 
 /***/ }),
 
@@ -3675,19 +3550,8 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\spira\OneDrive\Documents\PersonalProjects\StockTraderClientTransfer\StockTrader\client\src\index.js */"./src/index.js");
+module.exports = __webpack_require__(/*! C:\Users\spira\OneDrive\Documents\PersonalProjects\StockTrader\StockTrader\client\src\index.js */"./src/index.js");
 
-
-/***/ }),
-
-/***/ 1:
-/*!********************************!*\
-  !*** ./util.inspect (ignored) ***!
-  \********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-/* (ignored) */
 
 /***/ }),
 
@@ -3702,5 +3566,5 @@ module.exports = __webpack_require__(/*! C:\Users\spira\OneDrive\Documents\Perso
 
 /***/ })
 
-},[[0,"runtime-main",0]]]);
+},[[0,"runtime-main",2]]]);
 //# sourceMappingURL=main.chunk.js.map

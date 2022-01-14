@@ -35,7 +35,12 @@ const Register = (props) => {
 
   return (
     <>
-      <Button size='lg' onClick={handleShow} className='btn btn-warning'>
+      <Button
+        size='lg'
+        onClick={handleShow}
+        className='btn '
+        style={{ backgroundColor: '#343a40', border: 'none' }}
+      >
         Register
       </Button>
 
