@@ -6,7 +6,7 @@ import { UserNameContext } from '../context/UserNameContext';
 
 const Register = (props) => {
   const [show, setShow] = useState(false);
-  const [user, setUser] = useState('');
+  const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [userName, setUserName] = useContext(UserNameContext);
@@ -19,7 +19,7 @@ const Register = (props) => {
 
     try {
       const response = await axios.post('/api/auth/register', {
-        user: user,
+        user: username,
         email: email,
         password: password
       });
@@ -54,8 +54,8 @@ const Register = (props) => {
             <Form.Control
               type='username'
               placeholder='username'
-              value={user}
-              onChange={(e) => setUser(e.target.value)}
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
             />
           </Form.Group>
           <Form.Group controlId='formBasicEmail'>
@@ -79,7 +79,7 @@ const Register = (props) => {
               onChange={(e) => setPassword(e.target.value)}
             />
           </Form.Group>
-          <Button variant='primary' type='submit' onClick={handleClose}>
+          <Button variant='secondary' type='submit' onClick={handleClose}>
             Submit
           </Button>
         </Form>

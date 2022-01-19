@@ -68,7 +68,7 @@ const SellModal = (props) => {
           </Alert>
         )}
         <Modal.Footer>
-          <Button variant='secondary' onClick={handleClose}>
+          <Button variant='danger' onClick={handleClose}>
             Cancel Order
           </Button>
           <Button

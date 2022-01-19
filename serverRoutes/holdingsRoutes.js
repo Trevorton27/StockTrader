@@ -22,7 +22,7 @@ router.get('/:user_id', async (req, res) => {
   } catch (err) {
     console.error('error from server- get all holdings', err.message);
     res.status(500).json({
-      errorMessage: 'Something went wrong on the server. Please try again.',
+      errorMessage: 'Something went wrong on the server. Please try again.'
     });
   }
 });
@@ -62,7 +62,7 @@ router.post('/buy', async (req, res) => {
   } catch (err) {
     console.error('error from server- create new holding', err.message);
     res.status(500).json({
-      errorMessage: 'Something went wrong on the server. Please try again.',
+      errorMessage: 'Something went wrong on the server. Please try again.'
     });
   }
 });
@@ -105,7 +105,7 @@ router.post('/sell', async (req, res) => {
   } catch (err) {
     console.error('error from server- create new holding', err.message);
     res.status(500).json({
-      errorMessage: 'Something went wrong on the server. Please try again.',
+      errorMessage: 'Something went wrong on the server. Please try again.'
     });
   }
 });

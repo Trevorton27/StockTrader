@@ -26,7 +26,7 @@ export const buyStock = async (holding, shares) => {
 export const sellStock = async (holding, shares) => {
   try {
     const response = await axios.post(`/api/holdings/sell/`, {
-      user_id: JSON.parse(localStorage.getItem()).id,
+      user_id: JSON.parse(localStorage.getItem('userData')).id,
       holding,
       shares
     });

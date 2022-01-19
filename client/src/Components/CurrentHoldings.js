@@ -5,7 +5,6 @@ import { Button } from 'react-bootstrap';
 const CurrentHoldings = ({ holding }) => {
   const [holdingStyleColor, setHoldingStyleColor] = useState('');
   const [positiveSign, setPositiveSign] = useState(false);
-  const { name, symbol, price, percent_change, shares, created_at } = holding;
 
   useEffect(() => {
     const isHoldingNegativeOrPositive = () => {
@@ -18,7 +17,9 @@ const CurrentHoldings = ({ holding }) => {
       }
     };
     isHoldingNegativeOrPositive();
-  }, [percent_change]);
+  }, []);
+
+  const { name, symbol, price, percent_change, shares, created_at } = holding;
 
   return (
     <div className='selected-holding card mt-4'>

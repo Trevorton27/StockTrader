@@ -35,33 +35,24 @@ router.post('/register', async (req, res) => {
 
 router.get('/login', async (req, res) => {
   try {
-    const { email, password } = req.query;
-
-    const user = await pool.query(
-      'SELECT * FROM users WHERE user_email = ($1)',
-      [email]
+    const { username, password } = req.query;
+    const user = { name: username };
+    const result = await pool.query(
+      'SELECT * FROM users WHERE user_name = ($1)',
+      [username]
     );
 
-    // if (user.rows.length === 0) {
-    //   return res.status(401).json('Invalid credentials');
-    // }
+    const isAuthenticated = jwt.sign(user, process.env.TOKEN_SECRET_KEY, {
+      expiresIn: '3600000'
+    });
 
-    // // check passwords match http request and db
-    // if (user.rows[0].user_password !== password) {
-    //   return res.status(401).json('Invalid credentials.');
-    // }
-
-    // res.json({ id: user.rows[0].user_id, name: user.rows[0].user_name });
-    // const isAuthenticated = jwt.sign(user, process.env.TOKEN_SECRET_KEY, {
-    //   expiresIn: '3600000'
-    // });
-    const match = bcrypt.compare(password, user.rows[0].password);
+    const match = bcrypt.compare(password, result.rows[0].password);
     if (match) {
       res.json({
-        id: user.rows[0].user_id,
-        name: user.rows[0].user_name
-        // authToken: isAuthenticated
+        id: result.rows[0].user_id,
+        name: result.rows[0].user_name
       });
+      // res.cookie('authToken', isAuthenticated, { httpOnly: true });
     } else {
       return res.status(401).json('Invalid credentials.');
     }

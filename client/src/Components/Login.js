@@ -6,8 +6,9 @@ import { UserNameContext } from '../context/UserNameContext';
 
 const Login = (props) => {
   const [show, setShow] = useState(false);
-  const [email, setEmail] = useState('');
+  //const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [username, setUsername] = useState('');
   const [userName, setUserName] = useContext(UserNameContext);
 
   const handleClose = () => setShow(false);
@@ -18,7 +19,7 @@ const Login = (props) => {
     try {
       const response = await axios.get('/api/auth/login', {
         params: {
-          email: email,
+          username: username,
           password: password
         }
       });
@@ -47,12 +48,12 @@ const Login = (props) => {
         </Modal.Header>
         <Form onSubmit={loginUser}>
           <Form.Group controlId='formBasicEmail'>
-            <Form.Label>Email address</Form.Label>
+            <Form.Label>User Name</Form.Label>
             <Form.Control
-              type='email'
-              placeholder='Enter email'
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              type='text'
+              placeholder='Enter user name'
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
             />
           </Form.Group>
           <Form.Group controlId='formBasicPassword'>
@@ -64,7 +65,7 @@ const Login = (props) => {
               onChange={(e) => setPassword(e.target.value)}
             />
           </Form.Group>
-          <Button variant='primary' type='submit'>
+          <Button variant='secondary' type='submit'>
             Submit
           </Button>
         </Form>

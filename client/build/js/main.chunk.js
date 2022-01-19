@@ -302,6 +302,7 @@ const AddHolding = props => {
   }, "Submit"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
     className: "w-100 text-center text-success",
     style: {
+      marginTop: '10px',
       display: symbol === '' ? 'none' : 'block'
     },
     __self: undefined,
@@ -310,7 +311,8 @@ const AddHolding = props => {
       lineNumber: 79,
       columnNumber: 9
     }
-  }, companyName)), isShowAlert && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap_Alert__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }, !companyName ? '' : `Did you mean ${companyName}? Please press submit if this is the correct
+            company.`)), isShowAlert && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap_Alert__WEBPACK_IMPORTED_MODULE_1__["default"], {
     className: "w-50 text-center m-auto",
     variant: "danger",
     onClose: () => setShowAlert(false),
@@ -318,7 +320,7 @@ const AddHolding = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 89,
+      lineNumber: 93,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
@@ -326,7 +328,7 @@ const AddHolding = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 95,
+      lineNumber: 99,
       columnNumber: 11
     }
   }, symbol), " is not a valid symbol. Please try modifying your search."));
@@ -360,14 +362,6 @@ const CurrentHoldings = _ref => {
   } = _ref;
   const [holdingStyleColor, setHoldingStyleColor] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])('');
   const [positiveSign, setPositiveSign] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
-  const {
-    name,
-    symbol,
-    price,
-    percent_change,
-    shares,
-    created_at
-  } = holding;
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     const isHoldingNegativeOrPositive = () => {
       if (String(percent_change).charAt(0) === '-') {
@@ -380,13 +374,21 @@ const CurrentHoldings = _ref => {
     };
 
     isHoldingNegativeOrPositive();
-  }, [percent_change]);
+  }, []);
+  const {
+    name,
+    symbol,
+    price,
+    percent_change,
+    shares,
+    created_at
+  } = holding;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "selected-holding card mt-4",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24,
+      lineNumber: 25,
       columnNumber: 5
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -394,14 +396,14 @@ const CurrentHoldings = _ref => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25,
+      lineNumber: 26,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26,
+      lineNumber: 27,
       columnNumber: 9
     }
   }, name, ": ", symbol), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -409,7 +411,7 @@ const CurrentHoldings = _ref => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29,
+      lineNumber: 30,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
@@ -420,7 +422,7 @@ const CurrentHoldings = _ref => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30,
+      lineNumber: 31,
       columnNumber: 11
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Button"], {
@@ -429,7 +431,7 @@ const CurrentHoldings = _ref => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31,
+      lineNumber: 32,
       columnNumber: 13
     }
   }, "Trade")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
@@ -437,14 +439,14 @@ const CurrentHoldings = _ref => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37,
+      lineNumber: 38,
       columnNumber: 7
     }
   }, "Date purchased: ", created_at), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38,
+      lineNumber: 39,
       columnNumber: 7
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -452,7 +454,7 @@ const CurrentHoldings = _ref => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39,
+      lineNumber: 40,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -460,14 +462,14 @@ const CurrentHoldings = _ref => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40,
+      lineNumber: 41,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41,
+      lineNumber: 42,
       columnNumber: 11
     }
   }, "Shares Total Value:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -475,7 +477,7 @@ const CurrentHoldings = _ref => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42,
+      lineNumber: 43,
       columnNumber: 11
     }
   }, "$", Number(price * shares).toFixed(2))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -483,21 +485,21 @@ const CurrentHoldings = _ref => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46,
+      lineNumber: 47,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47,
+      lineNumber: 48,
       columnNumber: 11
     }
   }, "Number Of Shares:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48,
+      lineNumber: 49,
       columnNumber: 11
     }
   }, shares)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -505,14 +507,14 @@ const CurrentHoldings = _ref => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50,
+      lineNumber: 51,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51,
+      lineNumber: 52,
       columnNumber: 11
     }
   }, "Current Stock Value:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -520,7 +522,7 @@ const CurrentHoldings = _ref => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52,
+      lineNumber: 53,
       columnNumber: 11
     }
   }, "$", price)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -528,14 +530,14 @@ const CurrentHoldings = _ref => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54,
+      lineNumber: 55,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55,
+      lineNumber: 56,
       columnNumber: 11
     }
   }, "Percent Change:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -543,7 +545,7 @@ const CurrentHoldings = _ref => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56,
+      lineNumber: 57,
       columnNumber: 11
     }
   }, positiveSign, percent_change, "%"))));
@@ -577,9 +579,10 @@ var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\Sto
 
 
 const Login = props => {
-  const [show, setShow] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
-  const [email, setEmail] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])('');
+  const [show, setShow] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false); //const [email, setEmail] = useState('');
+
   const [password, setPassword] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])('');
+  const [username, setUsername] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])('');
   const [userName, setUserName] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(_context_UserNameContext__WEBPACK_IMPORTED_MODULE_4__["UserNameContext"]);
 
   const handleClose = () => setShow(false);
@@ -592,7 +595,7 @@ const Login = props => {
     try {
       const response = await axios__WEBPACK_IMPORTED_MODULE_1___default.a.get('/api/auth/login', {
         params: {
-          email: email,
+          username: username,
           password: password
         }
       });
@@ -615,7 +618,7 @@ const Login = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36,
+      lineNumber: 37,
       columnNumber: 7
     }
   }, "Login"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Modal"], {
@@ -624,7 +627,7 @@ const Login = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44,
+      lineNumber: 45,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Modal"].Header, {
@@ -632,14 +635,14 @@ const Login = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45,
+      lineNumber: 46,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Modal"].Title, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46,
+      lineNumber: 47,
       columnNumber: 11
     }
   }, "Login Form")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Form"], {
@@ -647,7 +650,7 @@ const Login = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48,
+      lineNumber: 49,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Form"].Group, {
@@ -655,25 +658,25 @@ const Login = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49,
+      lineNumber: 50,
       columnNumber: 11
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Form"].Label, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50,
+      lineNumber: 51,
       columnNumber: 13
     }
-  }, "Email address"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Form"].Control, {
-    type: "email",
-    placeholder: "Enter email",
-    value: email,
-    onChange: e => setEmail(e.target.value),
+  }, "User Name"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Form"].Control, {
+    type: "text",
+    placeholder: "Enter user name",
+    value: username,
+    onChange: e => setUsername(e.target.value),
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51,
+      lineNumber: 52,
       columnNumber: 13
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Form"].Group, {
@@ -681,14 +684,14 @@ const Login = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58,
+      lineNumber: 59,
       columnNumber: 11
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Form"].Label, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59,
+      lineNumber: 60,
       columnNumber: 13
     }
   }, "Password"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Form"].Control, {
@@ -699,16 +702,16 @@ const Login = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60,
+      lineNumber: 61,
       columnNumber: 13
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Button"], {
-    variant: "primary",
+    variant: "secondary",
     type: "submit",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67,
+      lineNumber: 68,
       columnNumber: 11
     }
   }, "Submit"))));
@@ -1038,7 +1041,7 @@ var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\Sto
 
 const Register = props => {
   const [show, setShow] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
-  const [user, setUser] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])('');
+  const [username, setUsername] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])('');
   const [email, setEmail] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])('');
   const [password, setPassword] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])('');
   const [userName, setUserName] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(_context_UserNameContext__WEBPACK_IMPORTED_MODULE_4__["UserNameContext"]);
@@ -1052,7 +1055,7 @@ const Register = props => {
 
     try {
       const response = await axios__WEBPACK_IMPORTED_MODULE_1___default.a.post('/api/auth/register', {
-        user: user,
+        user: username,
         email: email,
         password: password
       });
@@ -1128,8 +1131,8 @@ const Register = props => {
   }, "Username"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Form"].Control, {
     type: "username",
     placeholder: "username",
-    value: user,
-    onChange: e => setUser(e.target.value),
+    value: username,
+    onChange: e => setUsername(e.target.value),
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
@@ -1197,7 +1200,7 @@ const Register = props => {
       columnNumber: 13
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Button"], {
-    variant: "primary",
+    variant: "secondary",
     type: "submit",
     onClick: handleClose,
     __self: undefined,
@@ -1302,7 +1305,7 @@ function RenderRecommendations(props) {
     }
   }, ' ', companyName, ": Stock Symbol ", symbol), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Button"], {
     href: "#goup",
-    variant: "outline-primary",
+    variant: "outline-secondary",
     onClick: () => props.handleTrade(symbol),
     __self: this,
     __source: {
@@ -2119,7 +2122,7 @@ const Chart = () => {
         backgroundColor: ['rgba(255, 99, 132, 0.6)', 'rgba(54, 162, 235, 0.6)', 'rgba(255, 206, 86, 0.6)', 'rgba(75, 192, 192, 0.6)', 'rgba(153, 102, 255, 0.6)', 'rgba(255, 159, 64, 0.6)', 'rgba(255, 99, 132, 0.6)']
       }]
     });
-  }, [holdingNames]);
+  }, [holdingNames, holdingShares]);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "chart chart-portfolio",
     __self: undefined,
@@ -2447,7 +2450,7 @@ const BuyModal = props => {
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Button"], {
     className: "mr-2",
-    variant: "outline-primary",
+    variant: "outline-secondary",
     onClick: handleShow,
     __self: undefined,
     __source: {
@@ -2479,7 +2482,7 @@ const BuyModal = props => {
       lineNumber: 45,
       columnNumber: 11
     }
-  }, companyName, ": ", symbol)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Modal"].Body, {
+  }, companyName, ": Stock Symbol ", symbol)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Modal"].Body, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
@@ -2557,25 +2560,25 @@ const BuyModal = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 78,
+      lineNumber: 79,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Button"], {
-    variant: "secondary",
+    variant: "danger",
     onClick: handleClose,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 79,
+      lineNumber: 80,
       columnNumber: 11
     }
   }, "Cancel Order"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Button"], {
-    variant: "primary",
+    variant: "secondary",
     onClick: handleSubmit,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82,
+      lineNumber: 83,
       columnNumber: 11
     }
   }, "Buy Shares"))));
@@ -2762,7 +2765,7 @@ const SellModal = props => {
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Button"], {
-    variant: "secondary",
+    variant: "danger",
     onClick: handleClose,
     __self: undefined,
     __source: {
@@ -2887,7 +2890,7 @@ const buyStock = async (holding, shares) => {
 const sellStock = async (holding, shares) => {
   try {
     const response = await axios__WEBPACK_IMPORTED_MODULE_0___default.a.post(`/api/holdings/sell/`, {
-      user_id: JSON.parse(localStorage.getItem()).id,
+      user_id: JSON.parse(localStorage.getItem('userData')).id,
       holding,
       shares
     });
@@ -3566,5 +3569,5 @@ module.exports = __webpack_require__(/*! C:\Users\spira\OneDrive\Documents\Perso
 
 /***/ })
 
-},[[0,"runtime-main",2]]]);
+},[[0,"runtime-main",0]]]);
 //# sourceMappingURL=main.chunk.js.map

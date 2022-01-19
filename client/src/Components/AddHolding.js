@@ -79,10 +79,14 @@ const AddHolding = (props) => {
         <h6
           className='w-100 text-center text-success'
           style={{
+            marginTop: '10px',
             display: symbol === '' ? 'none' : 'block'
           }}
         >
-          {companyName}
+          {!companyName
+            ? ''
+            : `Did you mean ${companyName}? Please press submit if this is the correct
+            company.`}
         </h6>
       </form>
       {isShowAlert && (

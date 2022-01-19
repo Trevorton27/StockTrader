@@ -52,7 +52,7 @@ function RenderRecommendations(props) {
           </h3>
           <Button
             href='#goup'
-            variant='outline-primary'
+            variant='outline-secondary'
             onClick={() => props.handleTrade(symbol)}
           >
             Trade

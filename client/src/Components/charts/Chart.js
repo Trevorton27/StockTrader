@@ -14,14 +14,14 @@ const Chart = () => {
 
   const getHoldingsData = () => {
     getHoldings()
-      .then(holdingsData => setHoldings(holdingsData))
-      .catch(err => console.error('error get holdings', err));
+      .then((holdingsData) => setHoldings(holdingsData))
+      .catch((err) => console.error('error get holdings', err));
   };
 
   useEffect(() => {
     for (let i = 0; holdings.length > i; i++) {
-      setHoldingNames(prevState => [...prevState, holdings[i].name]);
-      setHoldingShares(prevState => [...prevState, holdings[i].shares]);
+      setHoldingNames((prevState) => [...prevState, holdings[i].name]);
+      setHoldingShares((prevState) => [...prevState, holdings[i].shares]);
     }
   }, [holdings]);
 
@@ -39,27 +39,27 @@ const Chart = () => {
             'rgba(75, 192, 192, 0.6)',
             'rgba(153, 102, 255, 0.6)',
             'rgba(255, 159, 64, 0.6)',
-            'rgba(255, 99, 132, 0.6)',
-          ],
-        },
-      ],
+            'rgba(255, 99, 132, 0.6)'
+          ]
+        }
+      ]
     });
-  }, [holdingNames]);
+  }, [holdingNames, holdingShares]);
 
   return (
-    <div className="chart chart-portfolio">
+    <div className='chart chart-portfolio'>
       {holdingNames.length > 0 && (
         <Pie
           data={holdingNames.length > 0 ? chartData : null}
           options={{
             title: {
               display: true,
-              fontSize: 15,
+              fontSize: 15
             },
             legend: {
               display: true,
-              position: 'right',
-            },
+              position: 'right'
+            }
           }}
         />
       )}
