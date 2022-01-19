@@ -426,7 +426,7 @@ const CurrentHoldings = _ref => {
       columnNumber: 11
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Button"], {
-    variant: "primary",
+    variant: "secondary",
     size: "md",
     __self: undefined,
     __source: {
@@ -3569,5 +3569,5 @@ module.exports = __webpack_require__(/*! C:\Users\spira\OneDrive\Documents\Perso
 
 /***/ })
 
-},[[0,"runtime-main",0]]]);
+},[[0,"runtime-main",2]]]);
 //# sourceMappingURL=main.chunk.js.map

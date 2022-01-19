@@ -29,7 +29,7 @@ const CurrentHoldings = ({ holding }) => {
         </h3>
         <div className='card-buttons'>
           <Link to={{ pathname: '/main', search: `?symbol=${symbol}` }}>
-            <Button variant='primary' size='md'>
+            <Button variant='secondary' size='md'>
               Trade
             </Button>
           </Link>
