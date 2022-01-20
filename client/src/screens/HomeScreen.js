@@ -12,10 +12,7 @@ const HomeScreen = () => {
             <h3 className='display-4 mb-5 home-header'>
               Welcome to Stock Trader
             </h3>
-            <p>
-              Experience the thrill of the stock market by utilizing fake money
-              to purchase real stocks and buy or sell shares.
-            </p>
+            <p>Experience the thrill of the stock market without the risk.</p>
             <p>Before you start, you must first register.</p>
             <p>
               Once you have registered, you will be automatically logged in.

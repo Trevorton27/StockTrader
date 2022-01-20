@@ -89,16 +89,18 @@ router.post('/sell', async (req, res) => {
 
     if (updatedShares === 0) {
       // delete holding row
-      const deletedHolding = await pool.query(
-        'DELETE FROM holdings WHERE holding_id = $1',
+      const { rows } = await pool.query(
+        'DELETE FROM holdings WHERE holding_id = $1  RETURNING *',
         [response.rows[0].holding_id]
       );
+      return rows;
     } else {
       // update holding
-      const updatedHolding = await pool.query(
+      const { rows } = await pool.query(
         'UPDATE holdings SET shares = $1, price = $2 WHERE holding_id = $3 RETURNING *',
         [updatedShares, latestPrice, response.rows[0].holding_id]
       );
+      return rows;
     }
 
     res.json(updatedHolding.rows[0]);
