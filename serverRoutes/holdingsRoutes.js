@@ -102,8 +102,6 @@ router.post('/sell', async (req, res) => {
       );
       return rows;
     }
-
-    res.json(updatedHolding.rows[0]);
   } catch (err) {
     console.error('error from server- create new holding', err.message);
     res.status(500).json({
