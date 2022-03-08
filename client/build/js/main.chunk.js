@@ -17,7 +17,7 @@ exports.push([module.i, "@import url(https://fonts.googleapis.com/css2?family=Op
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap);"]);
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-exports.push([module.i, "#home {\r\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") no-repeat center center/cover;\r\n  height: 95vh;\r\n  position: relative;\r\n  padding: 40px;\r\n}\r\n\r\n#home::before {\r\n  content: '';\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  width: 100%;\r\n  height: 100%;\r\n  background: rgba(0, 0, 0, 0.6);\r\n}\r\n\r\n#home * {\r\n  z-index: 10;\r\n}\r\n\r\n.home-card {\r\n  height: 100%;\r\n}\r\n\r\n.home-content {\r\n  width: 90%;\r\n  margin: auto;\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: center;\r\n  padding: 0 20px;\r\n  font-size: 1.3rem;\r\n  color: #fff;\r\n  font-family: 'Open Sans', sans-serif;\r\n}\r\n\r\n.home-content p {\r\n  font-size: 1.5rem;\r\n  text-align: start;\r\n}\r\n\r\n#home h1 {\r\n  text-align: start;\r\n\r\n  color: #fff;\r\n}\r\n\r\n.home-buttons-wrapper .btn {\r\n  margin-right: 20px;\r\n  font-size: 1.2rem;\r\n  text-align: center;\r\n}\r\n\r\n.home-header {\r\n  font-family: 'Open Sans', sans-serif;\r\n  font-weight: 600;\r\n}\r\n\r\n#home .col-logo {\r\n  margin: auto;\r\n}\r\n\r\n.home-container {\r\n  display: grid;\r\n  grid-template-columns: 2fr 1fr;\r\n}\r\n\r\n.home-card .card-body a {\r\n  position: absolute;\r\n  bottom: 0;\r\n}\r\n", ""]);
+exports.push([module.i, "#home {\r\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") no-repeat center center/cover;\r\n  height: 95vh;\r\n  position: relative;\r\n  padding: 40px;\r\n}\r\n\r\n#home::before {\r\n  content: '';\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  width: 100%;\r\n  height: 100%;\r\n  background: rgba(0, 0, 0, 0.6);\r\n}\r\n#home * {\r\n  z-index: 10;\r\n}\r\n\r\n.home-card {\r\n  height: 100%;\r\n}\r\n\r\n.home-content {\r\n  width: 90%;\r\n  margin: auto;\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: center;\r\n  padding: 0 20px;\r\n  font-size: 1.3rem;\r\n  color: #fff;\r\n  font-family: 'Open Sans', sans-serif;\r\n}\r\n\r\n.home-content p {\r\n  font-size: 1.5rem;\r\n  text-align: start;\r\n}\r\n\r\n#home h1 {\r\n  text-align: start;\r\n\r\n  color: #fff;\r\n}\r\n\r\n.home-buttons-wrapper .btn {\r\n  margin-right: 20px;\r\n  font-size: 1.2rem;\r\n  text-align: center;\r\n}\r\n\r\n.home-header {\r\n  font-family: 'Open Sans', sans-serif;\r\n  font-weight: 600;\r\n}\r\n\r\n#home .col-logo {\r\n  margin: auto;\r\n}\r\n\r\n.home-container {\r\n  display: grid;\r\n  grid-template-columns: 2fr 1fr;\r\n}\r\n\r\n.home-card .card-body a {\r\n  position: absolute;\r\n  bottom: 0;\r\n}\r\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -107,7 +107,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _screens_PortfolioScreen__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./screens/PortfolioScreen */ "./src/screens/PortfolioScreen.js");
 /* harmony import */ var _protected_routes_ProtectedRoute__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./protected-routes/ProtectedRoute */ "./src/protected-routes/ProtectedRoute.js");
 /* harmony import */ var _context_UserNameContext__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./context/UserNameContext */ "./src/context/UserNameContext.js");
-var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\TrevorsStockTrader\\StockTrader\\client\\src\\App.js";
+var _jsxFileName = "E:\\documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\App.js";
 
 
 
@@ -209,7 +209,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_bootstrap_Alert__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-bootstrap/Alert */ "./node_modules/react-bootstrap/esm/Alert.js");
 /* harmony import */ var _http_helpers_tradeUtilities__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../http-helpers/tradeUtilities */ "./src/http-helpers/tradeUtilities.js");
-var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\TrevorsStockTrader\\StockTrader\\client\\src\\components\\AddHolding.js";
+var _jsxFileName = "E:\\documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\components\\AddHolding.js";
 
 
 
@@ -351,7 +351,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/index.js");
-var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\TrevorsStockTrader\\StockTrader\\client\\src\\components\\CurrentHoldings.js";
+var _jsxFileName = "E:\\documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\components\\CurrentHoldings.js";
 
 
 
@@ -571,7 +571,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/index.js");
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var _context_UserNameContext__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../context/UserNameContext */ "./src/context/UserNameContext.js");
-var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\TrevorsStockTrader\\StockTrader\\client\\src\\components\\Login.js";
+var _jsxFileName = "E:\\documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\components\\Login.js";
 
 
 
@@ -737,7 +737,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _context_UserNameContext__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../context/UserNameContext */ "./src/context/UserNameContext.js");
 /* harmony import */ var react_icons_cg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-icons/cg */ "../node_modules/react-icons/cg/index.esm.js");
 /* harmony import */ var react_icons_ai__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-icons/ai */ "../node_modules/react-icons/ai/index.esm.js");
-var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\TrevorsStockTrader\\StockTrader\\client\\src\\components\\Navigation.js";
+var _jsxFileName = "E:\\documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\components\\Navigation.js";
 
 
 
@@ -872,7 +872,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/index.js");
-var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\TrevorsStockTrader\\StockTrader\\client\\src\\components\\NoCurrentHoldings.js";
+var _jsxFileName = "E:\\documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\components\\NoCurrentHoldings.js";
 
 
 
@@ -949,7 +949,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _RenderRecommendations__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./RenderRecommendations */ "./src/components/RenderRecommendations.js");
 /* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/index.js");
-var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\TrevorsStockTrader\\StockTrader\\client\\src\\components\\Recommendations.js";
+var _jsxFileName = "E:\\documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\components\\Recommendations.js";
 
 
 
@@ -1032,7 +1032,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/index.js");
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var _context_UserNameContext__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../context/UserNameContext */ "./src/context/UserNameContext.js");
-var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\TrevorsStockTrader\\StockTrader\\client\\src\\components\\Register.js";
+var _jsxFileName = "E:\\documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\components\\Register.js";
 
 
 
@@ -1229,7 +1229,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _http_helpers_tradeUtilities__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../http-helpers/tradeUtilities */ "./src/http-helpers/tradeUtilities.js");
 /* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/index.js");
-var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\TrevorsStockTrader\\StockTrader\\client\\src\\components\\RenderRecommendations.js";
+var _jsxFileName = "E:\\documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\components\\RenderRecommendations.js";
 
 
 
@@ -1441,7 +1441,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modals_SellModal__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modals/SellModal */ "./src/components/modals/SellModal.js");
 /* harmony import */ var _http_helpers_tradeUtilities__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../http-helpers/tradeUtilities */ "./src/http-helpers/tradeUtilities.js");
 /* harmony import */ var _charts_ChartTrade__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./charts/ChartTrade */ "./src/components/charts/ChartTrade.js");
-var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\TrevorsStockTrader\\StockTrader\\client\\src\\components\\SelectedHolding.js";
+var _jsxFileName = "E:\\documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\components\\SelectedHolding.js";
 
 
 
@@ -1704,7 +1704,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/index.js");
 /* harmony import */ var react_icons_fi__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-icons/fi */ "../node_modules/react-icons/fi/index.esm.js");
-var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\TrevorsStockTrader\\StockTrader\\client\\src\\components\\ShowAlert.js";
+var _jsxFileName = "E:\\documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\components\\ShowAlert.js";
 
 
 
@@ -1788,7 +1788,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _http_helpers_portfolioUtilities__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../http-helpers/portfolioUtilities */ "./src/http-helpers/portfolioUtilities.js");
 /* harmony import */ var react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-bootstrap/Card */ "./node_modules/react-bootstrap/esm/Card.js");
 /* harmony import */ var react_bootstrap_ListGroup__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-bootstrap/ListGroup */ "./node_modules/react-bootstrap/esm/ListGroup.js");
-var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\TrevorsStockTrader\\StockTrader\\client\\src\\components\\UserInfo.js";
+var _jsxFileName = "E:\\documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\components\\UserInfo.js";
 
 
 
@@ -1879,7 +1879,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var react_icons_gi__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-icons/gi */ "../node_modules/react-icons/gi/index.esm.js");
 /* harmony import */ var react_icons_ai__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-icons/ai */ "../node_modules/react-icons/ai/index.esm.js");
-var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\TrevorsStockTrader\\StockTrader\\client\\src\\components\\WelcomePage.js";
+var _jsxFileName = "E:\\documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\components\\WelcomePage.js";
 
 
 
@@ -2089,7 +2089,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_chartjs_2__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-chartjs-2 */ "./node_modules/react-chartjs-2/es/index.js");
 /* harmony import */ var react_chartjs_2__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_chartjs_2__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _http_helpers_tradeUtilities__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../http-helpers/tradeUtilities */ "./src/http-helpers/tradeUtilities.js");
-var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\TrevorsStockTrader\\StockTrader\\client\\src\\components\\charts\\Chart.js";
+var _jsxFileName = "E:\\documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\components\\charts\\Chart.js";
 
 
 
@@ -2171,7 +2171,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_chartjs_2__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_chartjs_2__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\TrevorsStockTrader\\StockTrader\\client\\src\\components\\charts\\ChartTrade.js";
+var _jsxFileName = "E:\\documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\components\\charts\\ChartTrade.js";
 
 
 
@@ -2278,7 +2278,7 @@ const ChartTrade = _ref => {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\TrevorsStockTrader\\StockTrader\\client\\src\\components\\headers\\HeaderPortfolio.js";
+var _jsxFileName = "E:\\documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\components\\headers\\HeaderPortfolio.js";
 
 
 function HeaderPortfolio() {
@@ -2329,7 +2329,7 @@ function HeaderPortfolio() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\TrevorsStockTrader\\StockTrader\\client\\src\\components\\headers\\HeaderTrade.js";
+var _jsxFileName = "E:\\documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\components\\headers\\HeaderTrade.js";
 
 
 function HeaderTrade() {
@@ -2401,7 +2401,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/index.js");
 /* harmony import */ var _http_helpers_portfolioUtilities__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../http-helpers/portfolioUtilities */ "./src/http-helpers/portfolioUtilities.js");
 /* harmony import */ var react_bootstrap_Alert__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-bootstrap/Alert */ "./node_modules/react-bootstrap/esm/Alert.js");
-var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\TrevorsStockTrader\\StockTrader\\client\\src\\components\\modals\\BuyModal.js";
+var _jsxFileName = "E:\\documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\components\\modals\\BuyModal.js";
 
 
 
@@ -2600,7 +2600,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/index.js");
-var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\TrevorsStockTrader\\StockTrader\\client\\src\\components\\modals\\SellModal.js";
+var _jsxFileName = "E:\\documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\components\\modals\\SellModal.js";
 
 
 
@@ -2805,7 +2805,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UserNameProvider", function() { return UserNameProvider; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\TrevorsStockTrader\\StockTrader\\client\\src\\context\\UserNameContext.js";
+var _jsxFileName = "E:\\documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\context\\UserNameContext.js";
 
 const UserNameContext = Object(react__WEBPACK_IMPORTED_MODULE_0__["createContext"])();
 const UserNameProvider = props => {
@@ -2936,7 +2936,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./App */ "./src/App.js");
 /* harmony import */ var _reportWebVitals__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./reportWebVitals */ "./src/reportWebVitals.js");
-var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\TrevorsStockTrader\\StockTrader\\client\\src\\index.js";
+var _jsxFileName = "E:\\documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\index.js";
 
 
 
@@ -2972,7 +2972,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\TrevorsStockTrader\\StockTrader\\client\\src\\protected-routes\\ProtectedRoute.js";
+var _jsxFileName = "E:\\documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\protected-routes\\ProtectedRoute.js";
 
 
 
@@ -3068,7 +3068,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Register__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Register */ "./src/components/Register.js");
 /* harmony import */ var _components_Login__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Login */ "./src/components/Login.js");
 /* harmony import */ var _components_WelcomePage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/WelcomePage */ "./src/components/WelcomePage.js");
-var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\TrevorsStockTrader\\StockTrader\\client\\src\\screens\\HomeScreen.js";
+var _jsxFileName = "E:\\documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\screens\\HomeScreen.js";
 
 
 
@@ -3186,7 +3186,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_headers_HeaderPortfolio__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/headers/HeaderPortfolio */ "./src/components/headers/HeaderPortfolio.js");
 /* harmony import */ var _components_charts_Chart__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/charts/Chart */ "./src/components/charts/Chart.js");
 /* harmony import */ var _http_helpers_tradeUtilities__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../http-helpers/tradeUtilities */ "./src/http-helpers/tradeUtilities.js");
-var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\TrevorsStockTrader\\StockTrader\\client\\src\\screens\\PortfolioScreen.js";
+var _jsxFileName = "E:\\documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\screens\\PortfolioScreen.js";
 
 
 
@@ -3294,7 +3294,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_AddHolding__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/AddHolding */ "./src/components/AddHolding.js");
 /* harmony import */ var _components_ShowAlert__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/ShowAlert */ "./src/components/ShowAlert.js");
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-var _jsxFileName = "C:\\Users\\spira\\OneDrive\\Documents\\PersonalProjects\\TrevorsStockTrader\\StockTrader\\client\\src\\screens\\TradeScreen.js";
+var _jsxFileName = "E:\\documents\\PersonalProjects\\StockTrader\\StockTrader\\client\\src\\screens\\TradeScreen.js";
 
 
 
@@ -3553,7 +3553,7 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\spira\OneDrive\Documents\PersonalProjects\TrevorsStockTrader\StockTrader\client\src\index.js */"./src/index.js");
+module.exports = __webpack_require__(/*! E:\documents\PersonalProjects\StockTrader\StockTrader\client\src\index.js */"./src/index.js");
 
 
 /***/ }),
