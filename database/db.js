@@ -9,6 +9,8 @@ const Pool = require('pg').Pool;
 //   database: process.env.DB_DATABASE
 // });
 
+//hey you guys!
+
 // for deployment
 const { Pool } = require('pg');
 require('dotenv').config();
