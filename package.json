@@ -7,7 +7,7 @@
     },
     "main": "server.js",
     "scripts": {
-   
+        "build": "npm run build",
         "client": "npm run watch --prefix client",
         "dev": "concurrently \"nodemon server.js\" \"npm run client\"" 
     },
