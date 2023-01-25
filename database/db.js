@@ -1,4 +1,4 @@
-const Pool = require('pg').Pool;
+//const Pool = require('pg').Pool;
 
 //for development
 // const pool = new Pool({
