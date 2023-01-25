@@ -7,7 +7,7 @@
     },
     "main": "server.js",
     "scripts": {
-        "build": "cd client && npm run build"
+        "build": "cd client && npm install && npm run build"
     },
     "author": "Trevor Mearns",
     "license": "ISC",
