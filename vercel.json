@@ -4,7 +4,7 @@
       "routes": [
         {
           "src": "/(.*)",
-          "dest": "server.js"
+          "dest": "/client/build/index.html"
         }
     ]
   }
